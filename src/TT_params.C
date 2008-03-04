@@ -19,7 +19,7 @@ void TT_params::Init(Int_t init_style)
     f_do_deForest_prescription=kFALSE;
     f_do_zero_FP              =kTRUE;
 
-    f_filename="events/events_1_mb.root";
+    f_filename="../events/events_1_mb.root";
 
     f_N_Events=400000;
 

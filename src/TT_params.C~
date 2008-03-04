@@ -21,7 +21,7 @@ void TT_params::Init(Int_t init_style)
 
     f_filename="events/events_1_mb.root";
 
-    f_N_Events=100000;
+    f_N_Events=400000;
 
     f_processes_on[0]=0;
     f_processes_on[1]=0;
