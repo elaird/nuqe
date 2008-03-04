@@ -1,0 +1,238 @@
+//implementing nucl-th/0512004v4
+
+////list of ambiguities/issues
+//--de Forest prescription
+//--ksi in F2?
+//--Mpi+-0?
+//--poles in Smith-Moniz form factors?
+//--M value fixed?
+//--use delta function to eliminate the integral over E?
+//--overall sign of epsilon
+//--epsilon upper/lower -1 proof
+//--what if contraction is complex?
+//--args, options, seed
+//--form factors
+//--integrate over a flux?
+//--nuclear magneton
+//--generalize target and recoil masses (call M_prime) for e scattering?
+//--average e_bind for SM
+//--Double_t ok?
+//--negative E/limits of integration for E?
+//----has implications for norm. of SM spectral function
+//----E lower threshold for binding e near 0
+//--virtual functions?
+//--single nucleon lower energy thershold
+//--Llewellyn-Smith does not make sense at high Q2
+//
+//--for (pf,eb)=(0.001,0.0), nothing      >
+//--for (pf,eb)=(0.03,0.0), looks good    >  understand
+//--for (pf,eb)=(0.225,0.0), very little  >
+//--for (pf,eb)=(0.225,0.025), seems ok   >
+//--seems caused by a N_W that's too small
+//
+//--W boson mass?
+//--FP included in NUANCE?
+//--NUANCE disagreement?
+//--how to find p_max for spectral functions
+//--make neighbors physical neighbors instead of index neighbors
+
+//--w<e_b ok?
+//--types for point counters
+//--hadronic tensor evaluation for AS_MF and AS_corr
+//--muon phi/direction of qbold
+//--factor of pi between AS and their reference?
+//--overall factor of M/(M+w) between Katori and polish limit?
+//--LS comparison
+//--try nu_e events
+//--flexible flux file
+//--fix height finding
+
+//--make more events than we want?
+//--shuffle tree
+  
+
+#include <iostream>
+#include "Rtypes.h"
+#include "TGraph.h"
+#include "TFile.h"
+#include "TTree.h"
+#include "TT_params.h"
+#include "TT_event.h"
+#include "TT_nucleus.h"
+#include "TT_drawer.h"
+
+using namespace std;
+
+void Minuit_FCN(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag);
+Int_t gen(TH1D*,TT_params*,TT_nucleus*);
+
+////////////////////////////////////////////////////////////////////////
+Int_t main(Int_t argc,char **argv) {
+  Bool_t help=0;
+
+  if (help) {
+    cout << "--USAGE: " << argv[0] << " CONFIG_FILE" << endl;
+    cout << "--for further help, see readme" << endl;
+    return 0;
+  }
+
+  TFile flux_file("flux.root");
+  TH1D *flux_histo=(TH1D*)flux_file.Get("flux")->Clone();
+  
+  //read in config file
+  TT_params params(argv[1]);
+  TT_nucleus nucleus(8,8);
+  //nucleus.n_plot();
+
+  gen(flux_histo,&params,&nucleus);
+  delete flux_histo;
+
+  return 0;
+}
+
+////////////////////////////////////////////////////////////////////////
+void Minuit_FCN(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag)
+{
+  //TT_event foo;
+  //foo.Init(current_drawer->f_params,current_drawer->f_nucleus,current_drawer->f_Enu,par[0],par[1],par[2],par[3]);
+  //foo.Evaluate_dsigma_dall();
+  //f=-1.0*foo.f_dsigma_dall;
+
+  ////for (Int_t iPar=0;iPar<4;iPar++) {
+  ////  printf("par[%d]=%8.6g; ",iPar,par[iPar]);
+  ////}
+  ////printf("f=%8.6g",f);
+  ////cout << endl;
+
+}
+
+////////////////////////////////////////////////////////////////////////
+Int_t gen(TH1D *flux_histo,TT_params *params,TT_nucleus *nucleus) {
+  
+  //set up file and tree
+  TFile f("xs.root","RECREATE");
+  TTree tree("tree","");
+  Double_t tree_xs;
+  Double_t tree_q[4];
+  Double_t tree_p[4];
+  Double_t tree_pprime[4];
+  Double_t tree_mag_p;
+  Double_t tree_cth_pq;
+  Double_t tree_phi_p;
+  Double_t tree_E;
+  Int_t    tree_process;
+  
+  tree.Branch("xs_branch",&tree_xs,"xs/D");
+  tree.Branch("q_branch",tree_q,"q[4]/D");
+  tree.Branch("p_branch",tree_p,"p[4]/D");
+  tree.Branch("pprime_branch",tree_pprime,"pprime[4]/D");
+  tree.Branch("mag_p_branch",&tree_mag_p,"mag_p/D");
+  tree.Branch("cth_branch",&tree_cth_pq,"cth_pq/D");
+  tree.Branch("phi_branch",&tree_phi_p,"phi/D");
+  tree.Branch("E_branch",&tree_E,"E/D");
+  tree.Branch("process_branch",&tree_process,"process/I");
+  
+  //set up process stuff
+  Int_t N_Processes=3;
+  UInt_t accepted_points[N_Processes];
+  UInt_t total_points[N_Processes];
+  UInt_t total_accepted=0;
+  Double_t process[N_Processes];
+  Double_t xs_est[N_Processes];
+  Double_t xs_err[N_Processes];
+  TT_drawer *drawer[N_Processes];
+
+  for (Int_t iProcess=0;iProcess<N_Processes;iProcess++) {
+    drawer[iProcess] = new TT_drawer(flux_histo,params,nucleus,iProcess);
+    drawer[iProcess]->Init_randomly(120000,2.0);
+    drawer[iProcess]->Compute_integral();
+
+    process[iProcess]=iProcess;
+    accepted_points[iProcess]=0;
+    total_points[iProcess]=0;
+    xs_est[iProcess]=1.0/N_Processes;
+  }
+  cout << "Initialization complete." << endl;
+
+  Bool_t keep_going=1;
+  Int_t total_to_accept=10000;
+  //generate events
+  while (keep_going) {
+    Int_t total_accepted_old=total_accepted;
+    for (Int_t iProcess=0;iProcess<N_Processes;iProcess++) {
+
+      //check whether we'd like an event of this type
+      Double_t xs_total=0.0;
+      UInt_t accepted_total=0;
+      for (Int_t jProcess=0;jProcess<N_Processes;jProcess++) {
+	xs_total+=xs_est[jProcess];
+	accepted_total+=accepted_points[jProcess];
+      }
+      Double_t frac_desired=xs_est[iProcess]/xs_total;
+      Double_t frac_actual =(accepted_points[iProcess]+0.0)/total_accepted;
+      if (frac_actual>frac_desired) continue;
+
+      //yes, we would indeed
+      TT_event foo(iProcess);
+
+      Bool_t got_one=0;
+      while (!got_one) {
+	total_points[iProcess]++;
+	got_one=drawer[iProcess]->Draw_point(&foo);
+      }
+
+      accepted_points[iProcess]++;
+      total_accepted++;
+  
+      //fill the tree with the event
+      tree_xs=foo.f_dsigma_dall;
+      for (Int_t iComp=0;iComp<4;iComp++) {
+	tree_q[iComp]=foo.f_q_lower[iComp];
+	tree_p[iComp]=foo.f_p_lower[iComp];
+	tree_pprime[iComp]=foo.f_pprime_lower[iComp];
+      }
+      tree_mag_p=foo.f_mag_p;
+      tree_cth_pq=foo.f_cos_theta_pq;
+      tree_phi_p=foo.f_phi_p;
+      tree_process=foo.f_process;
+      tree.Fill();
+
+      //update cross section
+      Double_t unit_conv=0.389379e-27;  
+      Double_t eff=(accepted_points[iProcess]+0.0)/total_points[iProcess];
+      xs_est[iProcess]=eff*drawer[iProcess]->f_integral*unit_conv;
+      xs_err[iProcess]=sqrt(eff*(1.0-eff)/total_points[iProcess])*drawer[iProcess]->f_integral*unit_conv;
+      
+    } //end process loop
+
+    if (total_accepted_old==total_accepted) {
+      cout << "caught in an infinite loop" << endl;
+      return -1;
+    }
+    keep_going=total_accepted<total_to_accept;
+    for (Int_t iProcess=0;iProcess<N_Processes;iProcess++) keep_going = keep_going || accepted_points[iProcess]<2;
+  } //end accepted_event loop
+
+  for (Int_t iProcess=0;iProcess<N_Processes;iProcess++) {
+      Double_t eff=(accepted_points[iProcess]+0.0)/total_points[iProcess];
+      printf("process: %6.4g, eff.: %6.4g, xs: %6.4g, xs_error: %6.4g\n",process[iProcess],eff,xs_est[iProcess],xs_err[iProcess]);
+  }
+
+  TGraph graph_xs      (N_Processes,process,xs_est);
+  TGraph graph_xs_error(N_Processes,process,xs_err);
+  
+  graph_xs.SetName("ccqe_xs");
+  graph_xs_error.SetName("ccqe_xs_error");
+  
+  tree.Write();
+  graph_xs.Write();
+  graph_xs_error.Write();
+  
+  f.Close();
+  
+  for (Int_t iDrawer=0;iDrawer<N_Processes;iDrawer++) {
+    delete drawer[iDrawer];
+  }
+
+  return 0;
+}

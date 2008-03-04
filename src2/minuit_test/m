@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ mtest.C `root-config --cflags --libs` $*

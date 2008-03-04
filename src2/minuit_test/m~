@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ foo.C TV_class.C TT_surface.C TT_nucleus.C TT_params.C `root-config --cflags --libs` $*

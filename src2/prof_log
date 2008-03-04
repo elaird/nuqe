@@ -1,0 +1,540 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 27.12      2.05     2.05 20791644     0.00     0.00  TT_drawer::Draw_point(TT_event*)
+ 15.21      3.20     1.15  6886123     0.00     0.00  TT_event::Init(TT_params*, TT_nucleus*, double, double, double, double, double)
+ 10.58      4.00     0.80  6886123     0.00     0.00  TT_event::Evaluate_dsigma_dall()
+  9.39      4.71     0.71 10762539     0.00     0.00  TT_params::Upper(double (*) [4], double*, double*)
+  5.82      5.15     0.44   125772     0.00     0.00  TT_event::Get_contraction()
+  4.76      5.51     0.36        1     0.36     7.07  TT_generator::Generate_events()
+  4.50      5.85     0.34  3503665     0.00     0.00  TT_event::Init_vectors(double, double*)
+  4.30      6.18     0.33 13898018     0.00     0.00  TMath::Abs(double)
+  2.98      6.40     0.23  3503665     0.00     0.00  TT_event::SM_SM_differential()
+  2.78      6.61     0.21   125772     0.00     0.00  TT_event::Init_L()
+  2.51      6.80     0.19  3503665     0.00     0.00  TT_event::SM_SM_determine_cos_theta_pq_and_E()
+  2.18      6.97     0.17  8086123     0.00     0.00  TT_drawer::Flux_histo_height(double)
+  1.72      7.10     0.13  3503665     0.00     0.00  TT_event::SM_argument_of_delta()
+  1.32      7.20     0.10  1383492     0.00     0.00  TT_params::G_D(double)
+  1.06      7.28     0.08   628860     0.00     0.00  TT_params::F1(double)
+  0.66      7.33     0.05   251544     0.00     0.00  TT_params::H2(double)
+  0.66      7.38     0.05   125772     0.00     0.00  TT_params::H1(double)
+  0.53      7.42     0.04        1     0.04     0.48  TT_drawer::Init_randomly()
+  0.40      7.45     0.03   628860     0.00     0.00  TT_params::FA(double)
+  0.40      7.48     0.03   125772     0.00     0.00  TT_nucleus::n_sm(double)
+  0.26      7.50     0.02   754632     0.00     0.00  TT_params::F2(double)
+  0.26      7.52     0.02   125772     0.00     0.00  TT_event::SM_argument_of_delta_prime()
+  0.13      7.53     0.01   125772     0.00     0.00  TT_event::SM_evaluate_integrand()
+  0.13      7.54     0.01   125772     0.00     0.00  TT_params::H3(double)
+  0.13      7.55     0.01   125772     0.00     0.00  TT_params::H4(double)
+  0.07      7.55     0.01        1     0.01     0.01  global constructors keyed to _ZN8TT_eventC2Ei
+  0.07      7.56     0.01        1     0.01     0.01  TT_drawer::~TT_drawer()
+  0.07      7.56     0.01                             TT_event::AS_SM_differential()
+  0.00      7.56     0.00  3629439     0.00     0.00  TMath::Pi()
+  0.00      7.56     0.00  3503665     0.00     0.00  TMath::Abs(int)
+  0.00      7.56     0.00   251544     0.00     0.00  TT_params::FP(double)
+  0.00      7.56     0.00   125772     0.00     0.00  TT_params::H5(double)
+  0.00      7.56     0.00      301     0.00     0.00  TT_event::TT_event(int)
+  0.00      7.56     0.00      301     0.00     0.00  TT_event::~TT_event()
+  0.00      7.56     0.00      300     0.00     0.00  TT_generator::Keep_going()
+  0.00      7.56     0.00      300     0.00     0.00  TT_generator::Update_rates(int)
+  0.00      7.56     0.00      300     0.00     0.00  TT_generator::Reject_process(int)
+  0.00      7.56     0.00      300     0.00     0.00  TT_generator::Report_progress()
+  0.00      7.56     0.00      300     0.00     0.00  TT_generator::Fill_tree(TT_event*)
+  0.00      7.56     0.00       24     0.00     0.00  TT_params::Count_transpositions(int const*)
+  0.00      7.56     0.00       24     0.00     0.00  TT_params::Power(int, int)
+  0.00      7.56     0.00        3     0.00     0.00  TString::operator char const*() const
+  0.00      7.56     0.00        2     0.00     0.00  TObject::operator new(unsigned int)
+  0.00      7.56     0.00        1     0.00     0.00  global constructors keyed to _ZN10TT_nucleusC2Eii
+  0.00      7.56     0.00        1     0.00     0.00  global constructors keyed to _ZN12TT_generatorC2EP4TH1DP9TT_paramsP10TT_nucleus
+  0.00      7.56     0.00        1     0.00     0.00  global constructors keyed to _ZN9TT_drawerC2EP4TH1DP9TT_paramsP10TT_nucleusi
+  0.00      7.56     0.00        1     0.00     0.00  global constructors keyed to _ZN9TT_paramsC2EPc
+  0.00      7.56     0.00        1     0.00     0.00  global constructors keyed to main
+  0.00      7.56     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      7.56     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      7.56     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      7.56     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      7.56     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      7.56     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      7.56     0.00        1     0.00     0.00  TT_nucleus::TT_nucleus(int, int)
+  0.00      7.56     0.00        1     0.00     0.00  TT_nucleus::~TT_nucleus()
+  0.00      7.56     0.00        1     0.00     0.48  TT_generator::Setup_processes()
+  0.00      7.56     0.00        1     0.00     0.00  TT_generator::Finish_up()
+  0.00      7.56     0.00        1     0.00     0.00  TT_generator::TT_generator(TH1D*, TT_params*, TT_nucleus*)
+  0.00      7.56     0.00        1     0.00     0.01  TT_generator::~TT_generator()
+  0.00      7.56     0.00        1     0.00     0.00  TT_drawer::Compute_integral()
+  0.00      7.56     0.00        1     0.00     0.00  TT_drawer::TT_drawer(TH1D*, TT_params*, TT_nucleus*, int)
+  0.00      7.56     0.00        1     0.00     0.00  TT_params::Init_epsilon_lower()
+  0.00      7.56     0.00        1     0.00     0.00  TT_params::Init()
+  0.00      7.56     0.00        1     0.00     0.00  TT_params::Init_g()
+  0.00      7.56     0.00        1     0.00     0.00  TT_params::TT_params(char*)
+  0.00      7.56     0.00        1     0.00     0.00  TT_params::~TT_params()
+  0.00      7.56     0.00        1     0.00     0.00  TAxis::GetXmax() const
+  0.00      7.56     0.00        1     0.00     0.00  TAxis::GetXmin() const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.13% of 7.56 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.9    0.00    7.55                 main [1]
+                0.36    6.71       1/1           TT_generator::Generate_events() [3]
+                0.00    0.48       1/1           TT_generator::Setup_processes() [11]
+                0.00    0.01       1/1           TT_generator::~TT_generator() [30]
+                0.00    0.00       2/3           TString::operator char const*() const [52]
+                0.00    0.00       1/1           TT_params::TT_params(char*) [74]
+                0.00    0.00       1/1           TT_params::Init() [72]
+                0.00    0.00       1/1           TT_nucleus::TT_nucleus(int, int) [65]
+                0.00    0.00       1/1           TT_generator::TT_generator(TH1D*, TT_params*, TT_nucleus*) [68]
+                0.00    0.00       1/1           TT_generator::Finish_up() [67]
+                0.00    0.00       1/1           TT_nucleus::~TT_nucleus() [66]
+                0.00    0.00       1/1           TT_params::~TT_params() [75]
+-----------------------------------------------
+                0.12    0.29 1200000/20791644     TT_drawer::Init_randomly() [10]
+                1.93    4.78 19591644/20791644     TT_generator::Generate_events() [3]
+[2]     94.2    2.05    5.07 20791644         TT_drawer::Draw_point(TT_event*) [2]
+                0.80    1.71 6886123/6886123     TT_event::Evaluate_dsigma_dall() [4]
+                1.15    1.27 6886123/6886123     TT_event::Init(TT_params*, TT_nucleus*, double, double, double, double, double) [5]
+                0.14    0.00 6886123/8086123     TT_drawer::Flux_histo_height(double) [15]
+-----------------------------------------------
+                0.36    6.71       1/1           main [1]
+[3]     93.5    0.36    6.71       1         TT_generator::Generate_events() [3]
+                1.93    4.78 19591644/20791644     TT_drawer::Draw_point(TT_event*) [2]
+                0.00    0.00     300/300         TT_generator::Reject_process(int) [47]
+                0.00    0.00     300/301         TT_event::TT_event(int) [43]
+                0.00    0.00     300/300         TT_generator::Keep_going() [45]
+                0.00    0.00     300/300         TT_generator::Report_progress() [48]
+                0.00    0.00     300/300         TT_generator::Fill_tree(TT_event*) [49]
+                0.00    0.00     300/300         TT_generator::Update_rates(int) [46]
+                0.00    0.00     300/301         TT_event::~TT_event() [44]
+-----------------------------------------------
+                0.80    1.71 6886123/6886123     TT_drawer::Draw_point(TT_event*) [2]
+[4]     33.2    0.80    1.71 6886123         TT_event::Evaluate_dsigma_dall() [4]
+                0.23    1.48 3503665/3503665     TT_event::SM_SM_differential() [6]
+                0.00    0.00 3503665/3629439     TMath::Pi() [40]
+-----------------------------------------------
+                1.15    1.27 6886123/6886123     TT_drawer::Draw_point(TT_event*) [2]
+[5]     32.1    1.15    1.27 6886123         TT_event::Init(TT_params*, TT_nucleus*, double, double, double, double, double) [5]
+                0.34    0.69 3503665/3503665     TT_event::Init_vectors(double, double*) [7]
+                0.24    0.00 10268581/13898018     TMath::Abs(double) [12]
+-----------------------------------------------
+                0.23    1.48 3503665/3503665     TT_event::Evaluate_dsigma_dall() [4]
+[6]     22.6    0.23    1.48 3503665         TT_event::SM_SM_differential() [6]
+                0.44    0.37  125772/125772      TT_event::Get_contraction() [8]
+                0.21    0.00  125772/125772      TT_event::Init_L() [13]
+                0.19    0.00 3503665/3503665     TT_event::SM_SM_determine_cos_theta_pq_and_E() [14]
+                0.13    0.00 3503665/3503665     TT_event::SM_argument_of_delta() [17]
+                0.08    0.00 3503665/13898018     TMath::Abs(double) [12]
+                0.01    0.05  125772/125772      TT_event::SM_evaluate_integrand() [24]
+                0.00    0.00 3503665/3503665     TMath::Abs(int) [41]
+-----------------------------------------------
+                0.34    0.69 3503665/3503665     TT_event::Init(TT_params*, TT_nucleus*, double, double, double, double, double) [5]
+[7]     13.7    0.34    0.69 3503665         TT_event::Init_vectors(double, double*) [7]
+                0.69    0.00 10510995/10762539     TT_params::Upper(double (*) [4], double*, double*) [9]
+-----------------------------------------------
+                0.44    0.37  125772/125772      TT_event::SM_SM_differential() [6]
+[8]     10.7    0.44    0.37  125772         TT_event::Get_contraction() [8]
+                0.05    0.04  125772/125772      TT_params::H1(double) [20]
+                0.00    0.07  125772/125772      TT_params::H5(double) [22]
+                0.03    0.04  125772/251544      TT_params::H2(double) [16]
+                0.01    0.06  125772/125772      TT_params::H4(double) [23]
+                0.01    0.04  125772/125772      TT_params::H3(double) [25]
+                0.02    0.00  251544/10762539     TT_params::Upper(double (*) [4], double*, double*) [9]
+-----------------------------------------------
+                0.02    0.00  251544/10762539     TT_event::Get_contraction() [8]
+                0.69    0.00 10510995/10762539     TT_event::Init_vectors(double, double*) [7]
+[9]      9.4    0.71    0.00 10762539         TT_params::Upper(double (*) [4], double*, double*) [9]
+-----------------------------------------------
+                0.04    0.44       1/1           TT_generator::Setup_processes() [11]
+[10]     6.3    0.04    0.44       1         TT_drawer::Init_randomly() [10]
+                0.12    0.29 1200000/20791644     TT_drawer::Draw_point(TT_event*) [2]
+                0.02    0.00 1200000/8086123     TT_drawer::Flux_histo_height(double) [15]
+                0.00    0.00       1/301         TT_event::TT_event(int) [43]
+                0.00    0.00       1/301         TT_event::~TT_event() [44]
+-----------------------------------------------
+                0.00    0.48       1/1           main [1]
+[11]     6.3    0.00    0.48       1         TT_generator::Setup_processes() [11]
+                0.04    0.44       1/1           TT_drawer::Init_randomly() [10]
+                0.00    0.00       1/1           TT_drawer::TT_drawer(TH1D*, TT_params*, TT_nucleus*, int) [70]
+                0.00    0.00       1/1           TT_drawer::Compute_integral() [69]
+-----------------------------------------------
+                0.00    0.00  125772/13898018     TT_event::SM_evaluate_integrand() [24]
+                0.08    0.00 3503665/13898018     TT_event::SM_SM_differential() [6]
+                0.24    0.00 10268581/13898018     TT_event::Init(TT_params*, TT_nucleus*, double, double, double, double, double) [5]
+[12]     4.3    0.33    0.00 13898018         TMath::Abs(double) [12]
+-----------------------------------------------
+                0.21    0.00  125772/125772      TT_event::SM_SM_differential() [6]
+[13]     2.8    0.21    0.00  125772         TT_event::Init_L() [13]
+-----------------------------------------------
+                0.19    0.00 3503665/3503665     TT_event::SM_SM_differential() [6]
+[14]     2.5    0.19    0.00 3503665         TT_event::SM_SM_determine_cos_theta_pq_and_E() [14]
+-----------------------------------------------
+                0.02    0.00 1200000/8086123     TT_drawer::Init_randomly() [10]
+                0.14    0.00 6886123/8086123     TT_drawer::Draw_point(TT_event*) [2]
+[15]     2.2    0.17    0.00 8086123         TT_drawer::Flux_histo_height(double) [15]
+-----------------------------------------------
+                0.03    0.04  125772/251544      TT_event::Get_contraction() [8]
+                0.03    0.04  125772/251544      TT_params::H5(double) [22]
+[16]     1.8    0.05    0.09  251544         TT_params::H2(double) [16]
+                0.03    0.02  251544/628860      TT_params::F1(double) [18]
+                0.01    0.02  251544/754632      TT_params::F2(double) [21]
+                0.01    0.00  251544/628860      TT_params::FA(double) [26]
+-----------------------------------------------
+                0.13    0.00 3503665/3503665     TT_event::SM_SM_differential() [6]
+[17]     1.7    0.13    0.00 3503665         TT_event::SM_argument_of_delta() [17]
+-----------------------------------------------
+                0.02    0.01  125772/628860      TT_params::H1(double) [20]
+                0.02    0.01  125772/628860      TT_params::H3(double) [25]
+                0.02    0.01  125772/628860      TT_params::H4(double) [23]
+                0.03    0.02  251544/628860      TT_params::H2(double) [16]
+[18]     1.7    0.08    0.05  628860         TT_params::F1(double) [18]
+                0.05    0.00  628860/1383492     TT_params::G_D(double) [19]
+-----------------------------------------------
+                0.05    0.00  628860/1383492     TT_params::F1(double) [18]
+                0.05    0.00  754632/1383492     TT_params::F2(double) [21]
+[19]     1.3    0.10    0.00 1383492         TT_params::G_D(double) [19]
+-----------------------------------------------
+                0.05    0.04  125772/125772      TT_event::Get_contraction() [8]
+[20]     1.2    0.05    0.04  125772         TT_params::H1(double) [20]
+                0.02    0.01  125772/628860      TT_params::F1(double) [18]
+                0.00    0.01  125772/754632      TT_params::F2(double) [21]
+                0.01    0.00  125772/628860      TT_params::FA(double) [26]
+-----------------------------------------------
+                0.00    0.01  125772/754632      TT_params::H1(double) [20]
+                0.00    0.01  125772/754632      TT_params::H3(double) [25]
+                0.01    0.02  251544/754632      TT_params::H2(double) [16]
+                0.01    0.02  251544/754632      TT_params::H4(double) [23]
+[21]     1.0    0.02    0.05  754632         TT_params::F2(double) [21]
+                0.05    0.00  754632/1383492     TT_params::G_D(double) [19]
+-----------------------------------------------
+                0.00    0.07  125772/125772      TT_event::Get_contraction() [8]
+[22]     0.9    0.00    0.07  125772         TT_params::H5(double) [22]
+                0.03    0.04  125772/251544      TT_params::H2(double) [16]
+-----------------------------------------------
+                0.01    0.06  125772/125772      TT_event::Get_contraction() [8]
+[23]     0.9    0.01    0.06  125772         TT_params::H4(double) [23]
+                0.02    0.01  125772/628860      TT_params::F1(double) [18]
+                0.01    0.02  251544/754632      TT_params::F2(double) [21]
+                0.01    0.00  125772/628860      TT_params::FA(double) [26]
+                0.00    0.00  251544/251544      TT_params::FP(double) [42]
+-----------------------------------------------
+                0.01    0.05  125772/125772      TT_event::SM_SM_differential() [6]
+[24]     0.8    0.01    0.05  125772         TT_event::SM_evaluate_integrand() [24]
+                0.03    0.00  125772/125772      TT_nucleus::n_sm(double) [27]
+                0.02    0.00  125772/125772      TT_event::SM_argument_of_delta_prime() [28]
+                0.00    0.00  125772/13898018     TMath::Abs(double) [12]
+-----------------------------------------------
+                0.01    0.04  125772/125772      TT_event::Get_contraction() [8]
+[25]     0.7    0.01    0.04  125772         TT_params::H3(double) [25]
+                0.02    0.01  125772/628860      TT_params::F1(double) [18]
+                0.00    0.01  125772/754632      TT_params::F2(double) [21]
+                0.01    0.00  125772/628860      TT_params::FA(double) [26]
+-----------------------------------------------
+                0.01    0.00  125772/628860      TT_params::H1(double) [20]
+                0.01    0.00  125772/628860      TT_params::H3(double) [25]
+                0.01    0.00  125772/628860      TT_params::H4(double) [23]
+                0.01    0.00  251544/628860      TT_params::H2(double) [16]
+[26]     0.4    0.03    0.00  628860         TT_params::FA(double) [26]
+-----------------------------------------------
+                0.03    0.00  125772/125772      TT_event::SM_evaluate_integrand() [24]
+[27]     0.4    0.03    0.00  125772         TT_nucleus::n_sm(double) [27]
+                0.00    0.00  125772/3629439     TMath::Pi() [40]
+-----------------------------------------------
+                0.02    0.00  125772/125772      TT_event::SM_evaluate_integrand() [24]
+[28]     0.3    0.02    0.00  125772         TT_event::SM_argument_of_delta_prime() [28]
+-----------------------------------------------
+                0.01    0.00       1/1           __do_global_ctors_aux [33]
+[29]     0.1    0.01    0.00       1         global constructors keyed to _ZN8TT_eventC2Ei [29]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [61]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[30]     0.1    0.00    0.01       1         TT_generator::~TT_generator() [30]
+                0.01    0.00       1/1           TT_drawer::~TT_drawer() [31]
+-----------------------------------------------
+                0.01    0.00       1/1           TT_generator::~TT_generator() [30]
+[31]     0.1    0.01    0.00       1         TT_drawer::~TT_drawer() [31]
+-----------------------------------------------
+                                                 <spontaneous>
+[32]     0.1    0.01    0.00                 TT_event::AS_SM_differential() [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.1    0.00    0.01                 __do_global_ctors_aux [33]
+                0.01    0.00       1/1           global constructors keyed to _ZN8TT_eventC2Ei [29]
+                0.00    0.00       1/1           global constructors keyed to main [58]
+                0.00    0.00       1/1           global constructors keyed to _ZN12TT_generatorC2EP4TH1DP9TT_paramsP10TT_nucleus [55]
+                0.00    0.00       1/1           global constructors keyed to _ZN9TT_drawerC2EP4TH1DP9TT_paramsP10TT_nucleusi [56]
+                0.00    0.00       1/1           global constructors keyed to _ZN10TT_nucleusC2Eii [54]
+                0.00    0.00       1/1           global constructors keyed to _ZN9TT_paramsC2EPc [57]
+-----------------------------------------------
+                0.00    0.00       2/3629439     TT_drawer::TT_drawer(TH1D*, TT_params*, TT_nucleus*, int) [70]
+                0.00    0.00  125772/3629439     TT_nucleus::n_sm(double) [27]
+                0.00    0.00 3503665/3629439     TT_event::Evaluate_dsigma_dall() [4]
+[40]     0.0    0.00    0.00 3629439         TMath::Pi() [40]
+-----------------------------------------------
+                0.00    0.00 3503665/3503665     TT_event::SM_SM_differential() [6]
+[41]     0.0    0.00    0.00 3503665         TMath::Abs(int) [41]
+-----------------------------------------------
+                0.00    0.00  251544/251544      TT_params::H4(double) [23]
+[42]     0.0    0.00    0.00  251544         TT_params::FP(double) [42]
+-----------------------------------------------
+                0.00    0.00       1/301         TT_drawer::Init_randomly() [10]
+                0.00    0.00     300/301         TT_generator::Generate_events() [3]
+[43]     0.0    0.00    0.00     301         TT_event::TT_event(int) [43]
+-----------------------------------------------
+                0.00    0.00       1/301         TT_drawer::Init_randomly() [10]
+                0.00    0.00     300/301         TT_generator::Generate_events() [3]
+[44]     0.0    0.00    0.00     301         TT_event::~TT_event() [44]
+-----------------------------------------------
+                0.00    0.00     300/300         TT_generator::Generate_events() [3]
+[45]     0.0    0.00    0.00     300         TT_generator::Keep_going() [45]
+-----------------------------------------------
+                0.00    0.00     300/300         TT_generator::Generate_events() [3]
+[46]     0.0    0.00    0.00     300         TT_generator::Update_rates(int) [46]
+-----------------------------------------------
+                0.00    0.00     300/300         TT_generator::Generate_events() [3]
+[47]     0.0    0.00    0.00     300         TT_generator::Reject_process(int) [47]
+-----------------------------------------------
+                0.00    0.00     300/300         TT_generator::Generate_events() [3]
+[48]     0.0    0.00    0.00     300         TT_generator::Report_progress() [48]
+-----------------------------------------------
+                0.00    0.00     300/300         TT_generator::Generate_events() [3]
+[49]     0.0    0.00    0.00     300         TT_generator::Fill_tree(TT_event*) [49]
+-----------------------------------------------
+                0.00    0.00      24/24          TT_params::Init_epsilon_lower() [71]
+[50]     0.0    0.00    0.00      24         TT_params::Count_transpositions(int const*) [50]
+-----------------------------------------------
+                0.00    0.00      24/24          TT_params::Init_epsilon_lower() [71]
+[51]     0.0    0.00    0.00      24         TT_params::Power(int, int) [51]
+-----------------------------------------------
+                0.00    0.00       1/3           TT_generator::TT_generator(TH1D*, TT_params*, TT_nucleus*) [68]
+                0.00    0.00       2/3           main [1]
+[52]     0.0    0.00    0.00       3         TString::operator char const*() const [52]
+-----------------------------------------------
+                0.00    0.00       2/2           TT_generator::TT_generator(TH1D*, TT_params*, TT_nucleus*) [68]
+[53]     0.0    0.00    0.00       2         TObject::operator new(unsigned int) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [33]
+[54]     0.0    0.00    0.00       1         global constructors keyed to _ZN10TT_nucleusC2Eii [54]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [33]
+[55]     0.0    0.00    0.00       1         global constructors keyed to _ZN12TT_generatorC2EP4TH1DP9TT_paramsP10TT_nucleus [55]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [33]
+[56]     0.0    0.00    0.00       1         global constructors keyed to _ZN9TT_drawerC2EP4TH1DP9TT_paramsP10TT_nucleusi [56]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [33]
+[57]     0.0    0.00    0.00       1         global constructors keyed to _ZN9TT_paramsC2EPc [57]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [33]
+[58]     0.0    0.00    0.00       1         global constructors keyed to main [58]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to main [58]
+[59]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN12TT_generatorC2EP4TH1DP9TT_paramsP10TT_nucleus [55]
+[60]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN8TT_eventC2Ei [29]
+[61]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN9TT_drawerC2EP4TH1DP9TT_paramsP10TT_nucleusi [56]
+[62]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN10TT_nucleusC2Eii [54]
+[63]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN9TT_paramsC2EPc [57]
+[64]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[65]     0.0    0.00    0.00       1         TT_nucleus::TT_nucleus(int, int) [65]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[66]     0.0    0.00    0.00       1         TT_nucleus::~TT_nucleus() [66]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[67]     0.0    0.00    0.00       1         TT_generator::Finish_up() [67]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[68]     0.0    0.00    0.00       1         TT_generator::TT_generator(TH1D*, TT_params*, TT_nucleus*) [68]
+                0.00    0.00       2/2           TObject::operator new(unsigned int) [53]
+                0.00    0.00       1/3           TString::operator char const*() const [52]
+-----------------------------------------------
+                0.00    0.00       1/1           TT_generator::Setup_processes() [11]
+[69]     0.0    0.00    0.00       1         TT_drawer::Compute_integral() [69]
+-----------------------------------------------
+                0.00    0.00       1/1           TT_generator::Setup_processes() [11]
+[70]     0.0    0.00    0.00       1         TT_drawer::TT_drawer(TH1D*, TT_params*, TT_nucleus*, int) [70]
+                0.00    0.00       2/3629439     TMath::Pi() [40]
+                0.00    0.00       1/1           TAxis::GetXmin() const [77]
+                0.00    0.00       1/1           TAxis::GetXmax() const [76]
+-----------------------------------------------
+                0.00    0.00       1/1           TT_params::TT_params(char*) [74]
+[71]     0.0    0.00    0.00       1         TT_params::Init_epsilon_lower() [71]
+                0.00    0.00      24/24          TT_params::Count_transpositions(int const*) [50]
+                0.00    0.00      24/24          TT_params::Power(int, int) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[72]     0.0    0.00    0.00       1         TT_params::Init() [72]
+-----------------------------------------------
+                0.00    0.00       1/1           TT_params::TT_params(char*) [74]
+[73]     0.0    0.00    0.00       1         TT_params::Init_g() [73]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[74]     0.0    0.00    0.00       1         TT_params::TT_params(char*) [74]
+                0.00    0.00       1/1           TT_params::Init_g() [73]
+                0.00    0.00       1/1           TT_params::Init_epsilon_lower() [71]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[75]     0.0    0.00    0.00       1         TT_params::~TT_params() [75]
+-----------------------------------------------
+                0.00    0.00       1/1           TT_drawer::TT_drawer(TH1D*, TT_params*, TT_nucleus*, int) [70]
+[76]     0.0    0.00    0.00       1         TAxis::GetXmax() const [76]
+-----------------------------------------------
+                0.00    0.00       1/1           TT_drawer::TT_drawer(TH1D*, TT_params*, TT_nucleus*, int) [70]
+[77]     0.0    0.00    0.00       1         TAxis::GetXmin() const [77]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [54] global constructors keyed to _ZN10TT_nucleusC2Eii [68] TT_generator::TT_generator(TH1D*, TT_params*, TT_nucleus*) [70] TT_drawer::TT_drawer(TH1D*, TT_params*, TT_nucleus*, int)
+  [55] global constructors keyed to _ZN12TT_generatorC2EP4TH1DP9TT_paramsP10TT_nucleus [30] TT_generator::~TT_generator() [31] TT_drawer::~TT_drawer()
+  [29] global constructors keyed to _ZN8TT_eventC2Ei [40] TMath::Pi() [71] TT_params::Init_epsilon_lower()
+  [56] global constructors keyed to _ZN9TT_drawerC2EP4TH1DP9TT_paramsP10TT_nucleusi [12] TMath::Abs(double) [50] TT_params::Count_transpositions(int const*)
+  [57] global constructors keyed to _ZN9TT_paramsC2EPc [41] TMath::Abs(int) [18] TT_params::F1(double)
+  [58] global constructors keyed to main [53] TObject::operator new(unsigned int) [21] TT_params::F2(double)
+  [59] __static_initialization_and_destruction_0(int, int) [7] TT_event::Init_vectors(double, double*) [26] TT_params::FA(double)
+  [60] __static_initialization_and_destruction_0(int, int) [8] TT_event::Get_contraction() [42] TT_params::FP(double)
+  [61] __static_initialization_and_destruction_0(int, int) [32] TT_event::AS_SM_differential() [20] TT_params::H1(double)
+  [62] __static_initialization_and_destruction_0(int, int) [6] TT_event::SM_SM_differential() [16] TT_params::H2(double)
+  [63] __static_initialization_and_destruction_0(int, int) [4] TT_event::Evaluate_dsigma_dall() [25] TT_params::H3(double)
+  [64] __static_initialization_and_destruction_0(int, int) [17] TT_event::SM_argument_of_delta() [23] TT_params::H4(double)
+  [27] TT_nucleus::n_sm(double) [24] TT_event::SM_evaluate_integrand() [22] TT_params::H5(double)
+  [65] TT_nucleus::TT_nucleus(int, int) [28] TT_event::SM_argument_of_delta_prime() [19] TT_params::G_D(double)
+  [66] TT_nucleus::~TT_nucleus() [14] TT_event::SM_SM_determine_cos_theta_pq_and_E() [72] TT_params::Init()
+  [45] TT_generator::Keep_going() [5] TT_event::Init(TT_params*, TT_nucleus*, double, double, double, double, double) [51] TT_params::Power(int, int)
+  [46] TT_generator::Update_rates(int) [13] TT_event::Init_L() [9] TT_params::Upper(double (*) [4], double*, double*)
+  [47] TT_generator::Reject_process(int) [43] TT_event::TT_event(int) [73] TT_params::Init_g()
+   [3] TT_generator::Generate_events() [44] TT_event::~TT_event() [74] TT_params::TT_params(char*)
+  [48] TT_generator::Report_progress() [2] TT_drawer::Draw_point(TT_event*) [75] TT_params::~TT_params()
+  [11] TT_generator::Setup_processes() [10] TT_drawer::Init_randomly() [76] TAxis::GetXmax() const
+  [49] TT_generator::Fill_tree(TT_event*) [69] TT_drawer::Compute_integral() [77] TAxis::GetXmin() const
+  [67] TT_generator::Finish_up() [15] TT_drawer::Flux_histo_height(double) [52] TString::operator char const*() const

@@ -1,0 +1,9 @@
+FILE(REMOVE
+"foo"
+"CMakeFiles/foo.dir/src/foo.o"
+"CMakeFiles/foo.dir/src/TT_params.o"
+"CMakeFiles/foo.dir/src/TT_generator.o"
+"CMakeFiles/foo.dir/src/TT_nucleus.o"
+"CMakeFiles/foo.dir/src/TT_drawer.o"
+"CMakeFiles/foo.dir/src/TT_event.o"
+)

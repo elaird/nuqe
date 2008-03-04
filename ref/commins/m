@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ single.C `root-config --cflags --libs`

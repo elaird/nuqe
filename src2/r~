@@ -1,0 +1,7 @@
+#!/bin/bash
+
+make
+
+if [ "$?" = "0" ]; then
+    time foo
+fi

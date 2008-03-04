@@ -1,0 +1,128 @@
+////////////////////////////////////////////////////////////////////////
+void Minuit_FCN(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag)
+{
+  //TT_event foo;
+  //foo.Init(current_drawer->f_params,current_drawer->f_nucleus,current_drawer->f_Enu,par[0],par[1],par[2],par[3]);
+  //foo.Evaluate_dsigma_dall();
+  //f=-1.0*foo.f_dsigma_dall;
+
+  ////for (Int_t iPar=0;iPar<4;iPar++) {
+  ////  printf("par[%d]=%8.6g; ",iPar,par[iPar]);
+  ////}
+  ////printf("f=%8.6g",f);
+  ////cout << endl;
+
+}
+
+void Minuit_FCN(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag);
+
+////////////////////////////////////////////////////////////////////////
+Double_t TT_drawer::Use_Minuit(Int_t factor)
+{
+  //Int_t problems=0;
+  //for (Int_t i_w=0;i_w<f_N_w;i_w++) {
+  //  Double_t w_min=f_w_min+i_w*(f_w_max-f_w_min)/f_N_w;
+  //  Double_t w_max=f_w_min+(i_w+1)*(f_w_max-f_w_min)/f_N_w;
+  //
+  //  Double_t ws=(i_w)    *(f_w_max-f_w_min)/f_N_w + f_w_min;
+  //  Double_t p_lep=sqrt(pow(f_Enu-ws,2)-pow(f_params->f_m_lep,2));
+  //  Double_t ws_qbold_min=f_Enu-p_lep;
+  //  Double_t ws_qbold_max=f_Enu+p_lep;
+  //
+  //  for (Int_t i_qbold=0;i_qbold<f_N_qbold;i_qbold++) {
+  //    for (Int_t i_mag_p=0;i_mag_p<f_N_mag_p;i_mag_p++) {
+  //	for (Int_t i_phi_p=0;i_phi_p<f_N_phi_p;i_phi_p++) {
+  //
+  //	  Double_t qbold_min=ws_qbold_min+ i_qbold   *(ws_qbold_max-ws_qbold_min)/f_N_qbold;
+  //	  Double_t qbold_max=ws_qbold_min+(i_qbold+1)*(ws_qbold_max-ws_qbold_min)/f_N_qbold;
+  //
+  //	  Double_t mag_p_min=f_mag_p_min+ i_mag_p   *(f_mag_p_max-f_mag_p_min)/f_N_mag_p;
+  //	  Double_t mag_p_max=f_mag_p_min+(i_mag_p+1)*(f_mag_p_max-f_mag_p_min)/f_N_mag_p;
+  //
+  //	  Double_t phi_p_min=f_phi_p_min+ i_phi_p   *(f_phi_p_max-f_phi_p_min)/f_N_phi_p;
+  //	  Double_t phi_p_max=f_phi_p_min+(i_phi_p+1)*(f_phi_p_max-f_phi_p_min)/f_N_phi_p;
+  //
+  //	  for (Int_t trial=0;trial<factor;trial++) {
+  //
+  //	    //static?
+  //	    Double_t vstart[4];
+  //	    Double_t step[4];
+  //	    Double_t lower[4];
+  //	    Double_t upper[4];
+  //
+  //	    vstart[0]=0.0922963; 
+  //	    vstart[1]=0.3128; 
+  //	    vstart[2]=0.470622; 
+  //	    vstart[3]=0.715178;
+  //	    
+  //	    //vstart[0]=f_rand.Uniform(w_min,w_max);
+  //	    //vstart[1]=f_rand.Uniform(qbold_min,qbold_max);
+  //	    //vstart[2]=f_rand.Uniform(mag_p_min,mag_p_max);
+  //	    //vstart[3]=f_rand.Uniform(phi_p_min,phi_p_max);
+  //	    
+  //	    lower[0]=w_min;
+  //	    upper[0]=w_max;
+  //	    lower[1]=qbold_min;
+  //	    upper[1]=qbold_max;
+  //	    lower[2]=mag_p_min;
+  //	    upper[2]=mag_p_max;
+  //	    lower[3]=phi_p_min;
+  //	    upper[3]=phi_p_max;
+  //
+  //	    //vstart[0]=0.5; 
+  //	    //vstart[1]=0.5;
+  //	    //vstart[2]=0.5; 
+  //	    //vstart[3]=0.5;
+  //	    //
+  //	    //lower[0]=0.0;
+  //	    //upper[0]=1.0;
+  //	    //lower[1]=0.0;
+  //	    //upper[1]=1.0;
+  //	    //lower[2]=0.0;
+  //	    //upper[2]=1.0;
+  //	    //lower[3]=0.0;
+  //	    //upper[3]=1.0;
+  //
+  //	    for (Int_t iStep=0;iStep<4;iStep++) {
+  //	      step[iStep]=(upper[iStep]-lower[iStep])/2.0;
+  //	      //printf("step[%d]=%8.6g\n",iStep,step[iStep]);
+  //	    }
+  //	    
+  //	    TMinuit minuit(4);
+  //	    minuit.SetFCN(Minuit_FCN);
+  //
+  //	    Double_t arglist[10];
+  //	    Int_t ierflg = 0;
+  //	    
+  //	    arglist[0]=-1;
+  //	    minuit.mnexcm("SET PRI",arglist,1,ierflg);
+  //
+  //	    arglist[0] = 1.0;
+  //	    minuit.mnexcm("SET ERR", arglist ,1,ierflg);
+  //
+  //	    minuit.mnparm(0, "w",      vstart[0],step[0],lower[0],upper[0],ierflg);
+  //	    minuit.mnparm(1, "q_bold", vstart[1],step[1],lower[1],upper[1],ierflg);
+  //	    minuit.mnparm(2, "mag_p",  vstart[2],step[2],lower[2],upper[2],ierflg);
+  //	    minuit.mnparm(3, "phi_p",  vstart[3],step[3],lower[3],upper[3],ierflg);
+  //	    
+  //	    // Now ready for minimization step
+  //	    arglist[0] = 500;
+  //	    arglist[1] = 1.0e-1;
+  //	    minuit.mnexcm("MIGRAD", arglist ,2,ierflg);
+  //	    
+  //	    // Print results
+  //	    Double_t amin,edm,errdef;
+  //	    Int_t nvpar,nparx,icstat;
+  //	    minuit.mnstat(amin,edm,errdef,nvpar,nparx,icstat);
+  //	    minuit.mnprin(3,amin);
+  //
+  //
+  //	  }
+  //	}
+  //    }
+  //  }
+  //}
+  //return (problems+0.0)/pow(f_N_var*factor,f_N_dims);
+  return 0.0;
+}
+

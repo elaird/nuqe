@@ -1,0 +1,367 @@
+Command: ./foo
+
+== 0 ===========================
+Heap allocation functions accounted for 83.2% of measured spacetime
+
+Called from:
+  15.4% : 0x47C8693: G__memfunc_next (in /usr/lib/root/libCint.so.5.16)
+
+   8.1% : 0x415BE3B: TBuffer::TBuffer(TBuffer::EMode, int) (in /usr/lib/root/libCore.so.5.16)
+
+   7.8% : 0x419596A: TStringRef::GetRep(int, int) (in /usr/lib/root/libCore.so.5.16)
+
+   7.6% : 0x4200A5B: TMethodCall::InitImplementation(char const*, char const*, char const*, TClass*, Cint::G__ClassInfo const&) (in /usr/lib/root/libCore.so.5.16)
+
+   6.2% : 0x4847C96: G__allocvariable (in /usr/lib/root/libCint.so.5.16)
+
+   6.0% : 0x419424B: TStorage::ObjectAlloc(unsigned) (in /usr/lib/root/libCore.so.5.16)
+
+   6.0% : 0x482A5EA: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+
+   4.3% : 0x41E973A: TClass::Streamer(void*, TBuffer&) (in /usr/lib/root/libCore.so.5.16)
+
+   4.0% : 0x482A64D: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+
+   1.6% : 0x41D87E8: TObjectTable::TObjectTable(int) (in /usr/lib/root/libCore.so.5.16)
+
+   1.4% : 0x47D67B3: G__memfunc_setup (in /usr/lib/root/libCint.so.5.16)
+
+   1.2% : 0x41D2EEC: TList::NewLink(TObject*, TObjLink*) (in /usr/lib/root/libCore.so.5.16)
+
+   0.9% : 0x47D53DF: G__memfunc_para_setup (in /usr/lib/root/libCint.so.5.16)
+
+   0.8% : 0x479D59E: G__savestring (in /usr/lib/root/libCint.so.5.16)
+
+   0.8% : 0x41E3B0C: TCint::UpdateListOfGlobals() (in /usr/lib/root/libCore.so.5.16)
+
+   0.5% : 0x47CFF11: G__inheritance_setup (in /usr/lib/root/libCint.so.5.16)
+
+   0.5% : 0x41D21D2: THashTable::THashTable(int, int) (in /usr/lib/root/libCore.so.5.16)
+
+   0.5% : 0x41CA843: TClassTable::FindElement(char const*, bool) (in /usr/lib/root/libCore.so.5.16)
+
+  and 775 other insignificant places
+
+== 1 ===========================
+Context accounted for 15.4% of measured spacetime
+  0x47C8693: G__memfunc_next (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   9.7% : 0x47D64F6: G__memfunc_setup (in /usr/lib/root/libCint.so.5.16)
+
+   5.6% : 0x482A7A4: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+
+---------------------------------
+Context accounted for  8.1% of measured spacetime
+  0x415BE3B: TBuffer::TBuffer(TBuffer::EMode, int) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   8.1% : 0x4C7987B: TBufferFile::TBufferFile(TBuffer::EMode, int) (in /usr/lib/root/libRIO.so.5.16)
+
+---------------------------------
+Context accounted for  7.8% of measured spacetime
+  0x419596A: TStringRef::GetRep(int, int) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   5.7% : 0x4197A74: TString::Replace(int, int, char const*, int) (in /usr/lib/root/libCore.so.5.16)
+
+   1.9% : 0x4195FC4: TString::TString(char const*) (in /usr/lib/root/libCore.so.5.16)
+
+  and 10 other insignificant places
+
+---------------------------------
+Context accounted for  7.6% of measured spacetime
+  0x4200A5B: TMethodCall::InitImplementation(char const*, char const*, char const*, TClass*, Cint::G__ClassInfo const&) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   7.6% : 0x4200BFC: TMethodCall::InitWithPrototype(TClass*, char const*, char const*) (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  6.2% of measured spacetime
+  0x4847C96: G__allocvariable (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   6.2% : 0x4857383: G__letvariable (in /usr/lib/root/libCint.so.5.16)
+
+---------------------------------
+Context accounted for  6.0% of measured spacetime
+  0x419424B: TStorage::ObjectAlloc(unsigned) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.8% : 0x41D26D4: THashTable::Add(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+   0.7% : 0x41E3B56: TCint::UpdateListOfGlobals() (in /usr/lib/root/libCore.so.5.16)
+
+   0.6% : 0x41E4F94: TCint::CreateListOfMethods(TClass*) (in /usr/lib/root/libCore.so.5.16)
+
+  and 218 other insignificant places
+
+---------------------------------
+Context accounted for  6.0% of measured spacetime
+  0x482A5EA: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   6.0% : 0x47C8B41: G__get_linked_tagnum (in /usr/lib/root/libCint.so.5.16)
+
+  and 1 other insignificant place
+
+---------------------------------
+Context accounted for  4.3% of measured spacetime
+  0x41E973A: TClass::Streamer(void*, TBuffer&) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   3.7% : 0x4C7C114: TBufferFile::ReadObjectAny(TClass const*) (in /usr/lib/root/libRIO.so.5.16)
+
+  and 4 other insignificant places
+
+---------------------------------
+Context accounted for  4.0% of measured spacetime
+  0x482A64D: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   4.0% : 0x47C8B41: G__get_linked_tagnum (in /usr/lib/root/libCint.so.5.16)
+
+  and 1 other insignificant place
+
+---------------------------------
+Context accounted for  1.6% of measured spacetime
+  0x41D87E8: TObjectTable::TObjectTable(int) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   1.6% : 0x41D88C9: TObjectTable::AddObj(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  1.4% of measured spacetime
+  0x47D67B3: G__memfunc_setup (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+  2752 insignificant places
+
+---------------------------------
+Context accounted for  1.2% of measured spacetime
+  0x41D2EEC: TList::NewLink(TObject*, TObjLink*) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   1.2% : 0x41D3066: TList::AddLast(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  0.9% of measured spacetime
+  0x47D53DF: G__memfunc_para_setup (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   0.9% : 0x47D5FB6: G__parse_parameter_link (in /usr/lib/root/libCint.so.5.16)
+
+---------------------------------
+Context accounted for  0.8% of measured spacetime
+  0x479D59E: G__savestring (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   0.5% : 0x47D6269: G__memfunc_setup (in /usr/lib/root/libCint.so.5.16)
+
+  and 1 other insignificant place
+
+---------------------------------
+Context accounted for  0.8% of measured spacetime
+  0x41E3B0C: TCint::UpdateListOfGlobals() (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.8% : 0x418B221: TROOT::GetListOfGlobals(bool) (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  0.5% of measured spacetime
+  0x47CFF11: G__inheritance_setup (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+  899 insignificant places
+
+---------------------------------
+Context accounted for  0.5% of measured spacetime
+  0x41D21D2: THashTable::THashTable(int, int) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+  6 insignificant places
+
+---------------------------------
+Context accounted for  0.5% of measured spacetime
+  0x41CA843: TClassTable::FindElement(char const*, bool) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.5% : 0x41CB2E1: TClassTable::Add(char const*, short, std::type_info const&, void (*)(), int) (in /usr/lib/root/libCore.so.5.16)
+
+== 2 ===========================
+Context accounted for  9.7% of measured spacetime
+  0x47C8693: G__memfunc_next (in /usr/lib/root/libCint.so.5.16)
+  0x47D64F6: G__memfunc_setup (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+  2709 insignificant places
+
+---------------------------------
+Context accounted for  5.6% of measured spacetime
+  0x47C8693: G__memfunc_next (in /usr/lib/root/libCint.so.5.16)
+  0x482A7A4: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   5.1% : 0x47C8B41: G__get_linked_tagnum (in /usr/lib/root/libCint.so.5.16)
+
+  and 1 other insignificant place
+
+---------------------------------
+Context accounted for  8.1% of measured spacetime
+  0x415BE3B: TBuffer::TBuffer(TBuffer::EMode, int) (in /usr/lib/root/libCore.so.5.16)
+  0x4C7987B: TBufferFile::TBufferFile(TBuffer::EMode, int) (in /usr/lib/root/libRIO.so.5.16)
+
+Called from:
+   8.0% : 0x54B1115: TBasket::TBasket(char const*, char const*, TBranch*) (in /usr/lib/root/libTree.so.5.16)
+
+  and 3 other insignificant places
+
+---------------------------------
+Context accounted for  5.7% of measured spacetime
+  0x419596A: TStringRef::GetRep(int, int) (in /usr/lib/root/libCore.so.5.16)
+  0x4197A74: TString::Replace(int, int, char const*, int) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   5.5% : 0x4198539: TString::operator=(char const*) (in /usr/lib/root/libCore.so.5.16)
+
+  and 19 other insignificant places
+
+---------------------------------
+Context accounted for  1.9% of measured spacetime
+  0x419596A: TStringRef::GetRep(int, int) (in /usr/lib/root/libCore.so.5.16)
+  0x4195FC4: TString::TString(char const*) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.6% : 0x41CB3F6: TClassTable::Add(char const*, short, std::type_info const&, void (*)(), int) (in /usr/lib/root/libCore.so.5.16)
+
+  and 75 other insignificant places
+
+---------------------------------
+Context accounted for  7.6% of measured spacetime
+  0x4200A5B: TMethodCall::InitImplementation(char const*, char const*, char const*, TClass*, Cint::G__ClassInfo const&) (in /usr/lib/root/libCore.so.5.16)
+  0x4200BFC: TMethodCall::InitWithPrototype(TClass*, char const*, char const*) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   7.2% : 0x4202D59: TStreamerBase::Init(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+  and 1 other insignificant place
+
+---------------------------------
+Context accounted for  6.2% of measured spacetime
+  0x4847C96: G__allocvariable (in /usr/lib/root/libCint.so.5.16)
+  0x4857383: G__letvariable (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   6.2% : 0x4785028: G__getexpr (in /usr/lib/root/libCint.so.5.16)
+
+  and 2 other insignificant places
+
+---------------------------------
+Context accounted for  0.8% of measured spacetime
+  0x419424B: TStorage::ObjectAlloc(unsigned) (in /usr/lib/root/libCore.so.5.16)
+  0x41D26D4: THashTable::Add(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+  22 insignificant places
+
+---------------------------------
+Context accounted for  0.7% of measured spacetime
+  0x419424B: TStorage::ObjectAlloc(unsigned) (in /usr/lib/root/libCore.so.5.16)
+  0x41E3B56: TCint::UpdateListOfGlobals() (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.7% : 0x418B221: TROOT::GetListOfGlobals(bool) (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  0.6% of measured spacetime
+  0x419424B: TStorage::ObjectAlloc(unsigned) (in /usr/lib/root/libCore.so.5.16)
+  0x41E4F94: TCint::CreateListOfMethods(TClass*) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.6% : 0x41E8CD7: TClass::GetListOfMethods() (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  6.0% of measured spacetime
+  0x482A5EA: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+  0x47C8B41: G__get_linked_tagnum (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   2.0% : 0x47CAA9C: G__get_linked_tagnum_fwd (in /usr/lib/root/libCint.so.5.16)
+
+  and 565 other insignificant places
+
+---------------------------------
+Context accounted for  3.7% of measured spacetime
+  0x41E973A: TClass::Streamer(void*, TBuffer&) (in /usr/lib/root/libCore.so.5.16)
+  0x4C7C114: TBufferFile::ReadObjectAny(TClass const*) (in /usr/lib/root/libRIO.so.5.16)
+
+Called from:
+   2.6% : 0x41D769B: TObjArray::Streamer(TBuffer&) (in /usr/lib/root/libCore.so.5.16)
+
+   0.6% : 0x41CF836: TBuffer& operator>><TObject>(TBuffer&, TObject*&) (in /usr/lib/root/libCore.so.5.16)
+
+  and 1 other insignificant place
+
+---------------------------------
+Context accounted for  4.0% of measured spacetime
+  0x482A64D: G__search_tagname (in /usr/lib/root/libCint.so.5.16)
+  0x47C8B41: G__get_linked_tagnum (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   1.3% : 0x47CAA9C: G__get_linked_tagnum_fwd (in /usr/lib/root/libCint.so.5.16)
+
+  and 565 other insignificant places
+
+---------------------------------
+Context accounted for  1.6% of measured spacetime
+  0x41D87E8: TObjectTable::TObjectTable(int) (in /usr/lib/root/libCore.so.5.16)
+  0x41D88C9: TObjectTable::AddObj(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   1.6% : 0x41777B2: TObject::TObject() (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  1.2% of measured spacetime
+  0x41D2EEC: TList::NewLink(TObject*, TObjLink*) (in /usr/lib/root/libCore.so.5.16)
+  0x41D3066: TList::AddLast(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   1.1% : 0x418414A: TList::Add(TObject*) (in /usr/lib/root/libCore.so.5.16)
+
+  and 3 other insignificant places
+
+---------------------------------
+Context accounted for  0.9% of measured spacetime
+  0x47D53DF: G__memfunc_para_setup (in /usr/lib/root/libCint.so.5.16)
+  0x47D5FB6: G__parse_parameter_link (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+   0.9% : 0x47D6458: G__memfunc_setup (in /usr/lib/root/libCint.so.5.16)
+
+---------------------------------
+Context accounted for  0.5% of measured spacetime
+  0x479D59E: G__savestring (in /usr/lib/root/libCint.so.5.16)
+  0x47D6269: G__memfunc_setup (in /usr/lib/root/libCint.so.5.16)
+
+Called from:
+  2752 insignificant places
+
+---------------------------------
+Context accounted for  0.8% of measured spacetime
+  0x41E3B0C: TCint::UpdateListOfGlobals() (in /usr/lib/root/libCore.so.5.16)
+  0x418B221: TROOT::GetListOfGlobals(bool) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.8% : 0x41F7C12: TDataMember::TDataMember(Cint::G__DataMemberInfo*, TClass*) (in /usr/lib/root/libCore.so.5.16)
+
+---------------------------------
+Context accounted for  0.5% of measured spacetime
+  0x41CA843: TClassTable::FindElement(char const*, bool) (in /usr/lib/root/libCore.so.5.16)
+  0x41CB2E1: TClassTable::Add(char const*, short, std::type_info const&, void (*)(), int) (in /usr/lib/root/libCore.so.5.16)
+
+Called from:
+   0.5% : 0x41CB499: ROOT::AddClass(char const*, short, std::type_info const&, void (*)(), int) (in /usr/lib/root/libCore.so.5.16)
+
+=================================
+
+End of information.  Rerun with a bigger --depth value for more.

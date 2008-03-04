@@ -1,0 +1,4 @@
+PROJECT(foo) 
+ADD_EXECUTABLE(foo foo.C TT_params.C TT_generator.C TT_nucleus.C TT_drawer.C TT_event.C)
+SET(CMAKE_CXX_FLAGS "`root-config --cflags`")
+TARGET_LINK_LIBRARIES(foo "`root-config --libs`")

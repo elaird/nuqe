@@ -1,0 +1,395 @@
+%!PS-Adobe-3.0
+%%Title: flattened PostScript generated from file: csContribs5.eps
+%%Creator: pstoedit
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/setPageSize { pop pop } def
+/ntranslate { neg exch neg exch translate } def
+/setshowparams { pop pop pop} def
+/awidthshowhex { dup length 0 gt { dup /ASCIIHexDecode filter exch length 2 div cvi string readstring pop } if awidthshow } def
+/backendconstraints { pop pop } def
+/pstoedit.newfont { 80 string cvs  findfont  dup length dict begin {1 index /FID ne {def} {pop pop} ifelse} forall  /Encoding ISOLatin1Encoding def   dup 80 string cvs /FontName exch def  currentdict end  definefont pop } def
+/imagestring 1 string def
+%%EndProlog
+%%BeginSetup
+% textastext doflatten backendconstraints   
+1 0 backendconstraints
+%%EndSetup
+%%Page: 1 1
+(Fa) cvn /CMSY10 pstoedit.newfont
+(Fb) cvn /CMR12 pstoedit.newfont
+(Fc) cvn /CMR17 pstoedit.newfont
+(Fd) cvn /CMMI12 pstoedit.newfont
+(Fe) cvn /CMMI12 pstoedit.newfont
+save %{
+save %{
+gsave %{
+ (Symbol-Oblique) cvn /Symbol pstoedit.newfont
+gsave %{
+  
+ 
+% 22                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 1.2 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+ 438.54 340.28 moveto
+ 437.64 343.28 lineto
+ 436.64 353.679 lineto
+ 435.74 368.179 lineto
+ 434.84 383.979 lineto
+ 433.94 400.779 lineto
+ 432.941 416.279 lineto
+ 432.041 430.578 lineto
+ 431.141 442.978 lineto
+ 430.141 453.678 lineto
+ 429.241 462.878 lineto
+ 428.341 470.078 lineto
+ 427.342 476.078 lineto
+ 426.442 481.278 lineto
+ 425.542 485.178 lineto
+ 424.642 488.278 lineto
+ 423.642 490.577 lineto
+ 422.742 492.777 lineto
+ 421.842 494.077 lineto
+ 420.843 495.177 lineto
+ 419.943 495.577 lineto
+ 419.043 496.477 lineto
+ 418.043 496.677 lineto
+ 417.143 496.777 lineto
+ 416.243 496.876 lineto
+ 415.343 496.876 lineto
+ 414.344 496.677 lineto
+ 413.444 496.577 lineto
+ 412.544 496.177 lineto
+ 411.544 495.577 lineto
+ 410.644 495.477 lineto
+ 406.944 493.677 lineto
+ 403.244 491.277 lineto
+ 399.444 488.577 lineto
+ 395.744 486.078 lineto
+ 392.044 482.978 lineto
+ 388.344 479.778 lineto
+ 384.645 476.578 lineto
+ 380.845 473.378 lineto
+ 377.145 470.078 lineto
+ 373.445 466.678 lineto
+ 369.745 463.578 lineto
+ 366.045 460.279 lineto
+ 362.245 457.179 lineto
+ 358.545 453.979 lineto
+ 354.845 450.779 lineto
+ 351.145 447.779 lineto
+ 347.445 444.879 lineto
+ 343.646 441.779 lineto
+ 339.946 438.879 lineto
+ 336.246 435.979 lineto
+ 332.546 433.28 lineto
+ 328.846 430.78 lineto
+ 325.146 428.08 lineto
+ 321.346 425.48 lineto
+ 317.646 423.08 lineto
+ 313.946 420.78 lineto
+ 310.246 418.48 lineto
+ 306.546 416.181 lineto
+ 302.746 413.981 lineto
+ 299.046 411.881 lineto
+ 295.346 409.881 lineto
+ 291.646 407.881 lineto
+ 287.947 405.882 lineto
+ 284.147 403.982 lineto
+ 280.447 402.182 lineto
+ 276.747 400.382 lineto
+ 273.047 398.682 lineto
+ 269.347 396.882 lineto
+ 265.547 395.083 lineto
+ 261.847 393.183 lineto
+ 258.147 391.083 lineto
+ 254.447 388.683 lineto
+ 250.747 385.983 lineto
+ 246.948 382.883 lineto
+ 243.248 379.483 lineto
+ 239.548 375.883 lineto
+ 235.848 372.083 lineto
+ 232.148 368.184 lineto
+ 228.348 364.284 lineto
+ 224.648 360.384 lineto
+ 220.948 356.784 lineto
+ 217.248 353.384 lineto
+ 213.548 350.484 lineto
+ 209.748 347.884 lineto
+ 206.048 345.885 lineto
+ 202.34 344.38 lineto
+ 198.64 343.28 lineto
+ 194.94 342.48 lineto
+ 191.14 341.98 lineto
+ 187.44 341.58 lineto
+ 183.74 341.281 lineto
+ 180.04 341.081 lineto
+ 176.34 340.981 lineto
+ 172.54 340.781 lineto
+ 168.84 340.681 lineto
+ 165.14 340.581 lineto
+ 161.44 340.581 lineto
+ 157.74 340.481 lineto
+ 153.941 340.381 lineto
+ 150.241 340.281 lineto
+stroke
+ 
+ 
+% 25                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ 4.0 2.0 ] 0.0 setdash
+ 1.2 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+ 438.54 340.28 moveto
+ 437.64 343.28 lineto
+ 436.64 353.679 lineto
+ 435.74 368.179 lineto
+ 434.84 383.979 lineto
+ 433.94 400.679 lineto
+ 432.941 416.079 lineto
+ 432.041 430.179 lineto
+ 431.141 442.479 lineto
+ 430.141 452.778 lineto
+ 429.241 461.878 lineto
+ 428.341 468.678 lineto
+ 427.342 474.278 lineto
+ 426.442 479.178 lineto
+ 425.542 482.677 lineto
+ 424.642 485.277 lineto
+ 423.642 487.277 lineto
+ 422.742 488.977 lineto
+ 421.842 489.977 lineto
+ 420.843 490.577 lineto
+ 419.943 490.577 lineto
+ 419.043 490.977 lineto
+ 418.043 490.877 lineto
+ 417.143 490.577 lineto
+ 416.243 490.177 lineto
+ 415.343 489.777 lineto
+ 414.344 489.277 lineto
+ 413.444 488.778 lineto
+ 412.544 488.078 lineto
+ 411.544 487.078 lineto
+ 410.644 486.578 lineto
+ 406.944 483.578 lineto
+ 403.244 480.178 lineto
+ 399.444 476.579 lineto
+ 395.744 473.279 lineto
+ 392.044 469.579 lineto
+ 388.344 465.979 lineto
+ 384.645 462.479 lineto
+ 380.845 458.979 lineto
+ 377.145 455.48 lineto
+ 373.445 451.98 lineto
+ 369.745 448.78 lineto
+ 366.045 445.58 lineto
+ 362.245 442.48 lineto
+ 358.545 439.38 lineto
+ 354.845 436.281 lineto
+ 351.145 433.381 lineto
+ 347.445 430.581 lineto
+ 343.646 427.781 lineto
+ 339.946 424.981 lineto
+ 336.246 422.381 lineto
+ 332.546 419.882 lineto
+ 328.846 417.582 lineto
+ 325.146 415.182 lineto
+ 321.346 412.782 lineto
+ 317.646 410.582 lineto
+ 313.946 408.582 lineto
+ 310.246 406.482 lineto
+ 306.546 404.483 lineto
+ 302.746 402.483 lineto
+ 299.046 400.683 lineto
+ 295.346 398.883 lineto
+ 291.646 397.183 lineto
+ 287.947 395.483 lineto
+ 284.147 393.783 lineto
+ 280.447 392.284 lineto
+ 276.747 390.784 lineto
+ 273.047 389.284 lineto
+ 269.347 387.784 lineto
+ 265.547 386.185 lineto
+ 261.847 384.585 lineto
+ 258.147 382.785 lineto
+ 254.447 380.685 lineto
+ 250.747 378.285 lineto
+ 246.948 375.585 lineto
+ 243.248 372.585 lineto
+ 239.548 369.385 lineto
+ 235.848 365.986 lineto
+ 232.148 362.486 lineto
+ 228.348 359.086 lineto
+ 224.648 355.686 lineto
+ 220.948 352.586 lineto
+ 217.248 349.686 lineto
+ 213.548 347.086 lineto
+ 209.748 344.987 lineto
+ 206.048 343.387 lineto
+ 202.34 342.18 lineto
+ 198.64 341.38 lineto
+ 194.94 340.88 lineto
+ 191.14 340.581 lineto
+ 187.44 340.381 lineto
+ 183.74 340.381 lineto
+ 180.04 340.281 lineto
+ 176.34 340.281 lineto
+ 172.54 340.281 lineto
+ 168.84 340.281 lineto
+ 165.14 340.281 lineto
+ 161.44 340.281 lineto
+ 157.74 340.281 lineto
+ 153.941 340.281 lineto
+ 150.241 340.281 lineto
+stroke
+ 
+% 28                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ 1.0 1.5 ] 0.0 setdash
+ 1.2 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+ 436.64 340.28 moveto
+ 435.74 340.28 lineto
+ 434.84 340.28 lineto
+ 433.94 340.38 lineto
+ 432.94 340.479 lineto
+ 432.04 340.679 lineto
+ 431.14 340.879 lineto
+ 430.141 341.079 lineto
+ 429.241 341.379 lineto
+ 428.341 341.679 lineto
+ 427.341 342.079 lineto
+ 426.441 342.379 lineto
+ 425.541 342.779 lineto
+ 424.641 343.178 lineto
+ 423.642 343.678 lineto
+ 422.742 344.078 lineto
+ 421.842 344.478 lineto
+ 420.842 344.878 lineto
+ 419.942 345.278 lineto
+ 419.042 345.778 lineto
+ 418.042 346.177 lineto
+ 417.143 346.577 lineto
+ 416.243 346.977 lineto
+ 415.343 347.377 lineto
+ 414.343 347.677 lineto
+ 413.443 348.077 lineto
+ 412.543 348.477 lineto
+ 411.543 348.777 lineto
+ 410.644 349.177 lineto
+ 406.944 350.376 lineto
+ 403.244 351.376 lineto
+ 399.444 352.276 lineto
+ 395.744 353.076 lineto
+ 392.044 353.576 lineto
+ 388.344 354.075 lineto
+ 384.644 354.475 lineto
+ 380.844 354.675 lineto
+ 377.144 354.875 lineto
+ 373.444 354.975 lineto
+ 369.744 355.075 lineto
+ 366.044 355.075 lineto
+ 362.245 354.975 lineto
+ 358.545 354.975 lineto
+ 354.845 354.775 lineto
+ 351.145 354.675 lineto
+ 347.445 354.475 lineto
+ 343.645 354.275 lineto
+ 339.945 354.075 lineto
+ 336.245 353.875 lineto
+ 332.545 353.676 lineto
+ 328.845 353.476 lineto
+ 325.145 353.176 lineto
+ 321.345 352.976 lineto
+ 317.646 352.776 lineto
+ 313.946 352.476 lineto
+ 310.246 352.176 lineto
+ 306.546 351.976 lineto
+ 302.746 351.677 lineto
+ 299.046 351.477 lineto
+ 295.346 351.177 lineto
+ 291.646 350.977 lineto
+ 287.946 350.677 lineto
+ 284.146 350.477 lineto
+ 280.446 350.177 lineto
+ 276.746 349.977 lineto
+ 273.046 349.677 lineto
+ 269.346 349.378 lineto
+ 265.547 349.178 lineto
+ 261.847 348.878 lineto
+ 258.147 348.578 lineto
+ 254.447 348.278 lineto
+ 250.747 347.979 lineto
+ 246.947 347.579 lineto
+ 243.247 347.179 lineto
+ 239.547 346.779 lineto
+ 235.847 346.379 lineto
+ 232.147 345.979 lineto
+ 228.347 345.479 lineto
+ 224.647 344.979 lineto
+ 220.948 344.48 lineto
+ 217.248 344.08 lineto
+ 213.548 343.68 lineto
+ 209.748 343.18 lineto
+ 206.048 342.88 lineto
+ 202.348 342.48 lineto
+ 198.648 342.181 lineto
+ 194.948 341.881 lineto
+ 191.148 341.681 lineto
+ 187.448 341.481 lineto
+ 183.748 341.281 lineto
+ 180.048 341.081 lineto
+ 176.348 340.981 lineto
+ 172.549 340.781 lineto
+ 168.849 340.681 lineto
+ 165.149 340.582 lineto
+ 161.449 340.582 lineto
+ 157.749 340.482 lineto
+ 153.949 340.382 lineto
+ 150.249 340.282 lineto
+stroke
+ 
+ 
+% 29                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.4 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+ 147.84 340.28 moveto
+ 447.839 340.28 lineto
+ 447.839 516.28 lineto
+ 147.84 516.28 lineto
+ 147.84 340.28 lineto
+stroke
+grestore %}
+ grestore %}
+ restore %}
+ 
+restore %}
+showpage
+%%BoundingBox: 108 303 462 516 
+%%Page: 1 1
+% normal end reached by pstoedit.pro
+%%Trailer
+%%Pages: 1
+%%EOF

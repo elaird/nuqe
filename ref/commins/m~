@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ foo.C TU_class.C TT_param_class.C `root-config --cflags --libs`
+#echo "compiled."

@@ -1,0 +1,2698 @@
+%!PS-Adobe-3.0
+%%Title: flattened PostScript generated from file: effbQ13.eps
+%%Creator: pstoedit
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/setPageSize { pop pop } def
+/ntranslate { neg exch neg exch translate } def
+/setshowparams { pop pop pop} def
+/awidthshowhex { dup length 0 gt { dup /ASCIIHexDecode filter exch length 2 div cvi string readstring pop } if awidthshow } def
+/backendconstraints { pop pop } def
+/pstoedit.newfont { 80 string cvs  findfont  dup length dict begin {1 index /FID ne {def} {pop pop} ifelse} forall  /Encoding ISOLatin1Encoding def   dup 80 string cvs /FontName exch def  currentdict end  definefont pop } def
+/imagestring 1 string def
+%%EndProlog
+%%BeginSetup
+% textastext doflatten backendconstraints   
+1 0 backendconstraints
+%%EndSetup
+%%Page: 1 1
+(Fa) cvn /CMSY10 pstoedit.newfont
+(Fb) cvn /CMR12 pstoedit.newfont
+(Fc) cvn /CMR17 pstoedit.newfont
+(Fd) cvn /CMMI12 pstoedit.newfont
+(Fe) cvn /CMMI12 pstoedit.newfont
+save %{
+save %{
+gsave %{
+ (Symbol-Oblique) cvn /Symbol pstoedit.newfont
+gsave %{
+  
+ 
+%%% 1                   pathnumber
+%%% strokedpath
+%% 612 792 setPageSize
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.1 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 2                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 340.28 moveto
+%% 149.139 340.28 lineto
+%% 447.839 340.28 moveto
+%% 441.54 340.28 lineto
+%%stroke
+%% 
+%% 
+%%% 3                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 365.38 moveto
+%% 149.139 365.38 lineto
+%% 447.839 365.38 moveto
+%% 441.54 365.38 lineto
+%%stroke
+%% 
+%% 
+%%% 4                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 390.58 moveto
+%% 149.139 390.58 lineto
+%% 447.839 390.58 moveto
+%% 441.54 390.58 lineto
+%%stroke
+%% 
+%% 
+%%% 5                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 415.68 moveto
+%% 149.139 415.68 lineto
+%% 447.839 415.68 moveto
+%% 441.54 415.68 lineto
+%%stroke
+%% 
+%% 
+%%% 6                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 440.88 moveto
+%% 149.139 440.88 lineto
+%% 447.839 440.88 moveto
+%% 441.54 440.88 lineto
+%%stroke
+%% 
+%% 
+%%% 7                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 465.98 moveto
+%% 149.139 465.98 lineto
+%% 447.839 465.98 moveto
+%% 441.54 465.98 lineto
+%%stroke
+%% 
+%% 
+%%% 8                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 491.18 moveto
+%% 149.139 491.18 lineto
+%% 447.839 491.18 moveto
+%% 441.54 491.18 lineto
+%%stroke
+%% 
+%% 
+%%% 9                   pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 516.28 moveto
+%% 149.139 516.28 lineto
+%% 447.839 516.28 moveto
+%% 441.54 516.28 lineto
+%%stroke
+%% 
+%% 
+%%% 10                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 340.28 moveto
+%% 142.84 346.58 lineto
+%% 142.84 516.28 moveto
+%% 142.84 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 11                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 186.44 340.28 moveto
+%% 186.44 346.58 lineto
+%% 186.44 516.28 moveto
+%% 186.44 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 12                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 229.94 340.28 moveto
+%% 229.94 346.58 lineto
+%% 229.94 516.28 moveto
+%% 229.94 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 13                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 273.54 340.28 moveto
+%% 273.54 346.58 lineto
+%% 273.54 516.28 moveto
+%% 273.54 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 14                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 317.14 340.28 moveto
+%% 317.14 346.58 lineto
+%% 317.14 516.28 moveto
+%% 317.14 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 15                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 360.74 340.28 moveto
+%% 360.74 346.58 lineto
+%% 360.74 516.28 moveto
+%% 360.74 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 16                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 404.24 340.28 moveto
+%% 404.24 346.58 lineto
+%% 404.24 516.28 moveto
+%% 404.24 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 17                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 447.84 340.28 moveto
+%% 447.84 346.58 lineto
+%% 447.84 516.28 moveto
+%% 447.84 509.98 lineto
+%%stroke
+%% 
+%% 
+%%% 18                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 19                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 340.28 moveto
+%% 447.839 340.28 lineto
+%% 447.839 516.28 lineto
+%% 142.84 516.28 lineto
+%% 142.84 340.28 lineto
+%%stroke
+%% 
+%% 
+%%% 20                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 21                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 22                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ 1.0 1.5 ] 0.0 setdash
+%% 1.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 23                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 2.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 24                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ 1.0 1.5 ] 0.0 setdash
+%% 1.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 413.44 500.28 moveto
+%% 437.84 500.28 lineto
+%% 143.94 383.28 moveto
+%% 146.14 416.68 lineto
+%% 148.24 437.58 lineto
+%% 150.439 453.979 lineto
+%% 152.639 466.679 lineto
+%% 154.839 476.779 lineto
+%% 157.039 485.179 lineto
+%% 159.139 491.879 lineto
+%% 161.339 497.279 lineto
+%% 163.539 501.379 lineto
+%% 165.739 504.079 lineto
+%% 167.939 506.779 lineto
+%% 170.039 508.179 lineto
+%% 172.239 509.279 lineto
+%% 174.439 508.879 lineto
+%% 176.639 508.179 lineto
+%% 178.739 507.079 lineto
+%% 180.938 505.779 lineto
+%% 183.138 503.879 lineto
+%% 185.338 501.379 lineto
+%% 187.538 498.979 lineto
+%% 189.638 495.78 lineto
+%% 191.838 492.68 lineto
+%% 194.038 490.08 lineto
+%% 196.238 487.48 lineto
+%% 198.438 484.48 lineto
+%% 200.538 481.98 lineto
+%% 202.738 479.381 lineto
+%% 204.938 476.681 lineto
+%% 207.138 473.881 lineto
+%% 209.238 471.381 lineto
+%% 211.438 468.981 lineto
+%% 213.637 466.081 lineto
+%% 215.837 463.881 lineto
+%% 218.037 461.481 lineto
+%% 220.137 459.281 lineto
+%% 222.337 456.782 lineto
+%% 224.537 454.482 lineto
+%% 226.737 452.182 lineto
+%% 228.937 450.082 lineto
+%% 231.037 447.982 lineto
+%% 233.237 445.683 lineto
+%% 235.437 443.683 lineto
+%% 237.637 441.683 lineto
+%% 239.737 439.683 lineto
+%% 241.937 437.583 lineto
+%% 244.136 435.684 lineto
+%% 246.336 433.784 lineto
+%% 248.536 432.084 lineto
+%% 250.636 430.284 lineto
+%% 252.836 428.484 lineto
+%% 255.036 426.784 lineto
+%% 257.236 425.084 lineto
+%% 259.436 423.484 lineto
+%% 261.536 421.885 lineto
+%% 263.736 420.185 lineto
+%% 265.936 418.585 lineto
+%% 268.136 417.185 lineto
+%% 270.236 415.685 lineto
+%% 272.436 414.185 lineto
+%% 274.635 412.885 lineto
+%% 276.835 411.586 lineto
+%% 279.035 410.086 lineto
+%% 281.135 408.586 lineto
+%% 283.335 406.886 lineto
+%% 285.535 405.386 lineto
+%% 287.735 403.587 lineto
+%% 289.935 401.887 lineto
+%% 292.035 399.987 lineto
+%% 294.235 398.187 lineto
+%% 296.435 396.387 lineto
+%% 298.635 394.487 lineto
+%% 300.735 392.688 lineto
+%% 302.935 390.688 lineto
+%% 305.135 388.888 lineto
+%% 307.334 386.988 lineto
+%% 309.534 385.088 lineto
+%% 311.634 383.388 lineto
+%% 313.834 381.488 lineto
+%% 316.034 379.688 lineto
+%% 318.234 377.889 lineto
+%% 320.434 376.189 lineto
+%% 322.534 374.389 lineto
+%% 324.734 372.789 lineto
+%% 326.934 371.089 lineto
+%% 329.134 369.489 lineto
+%% 331.234 367.99 lineto
+%% 333.434 366.39 lineto
+%% 335.634 364.89 lineto
+%% 337.833 363.39 lineto
+%% 340.033 361.99 lineto
+%% 342.133 360.69 lineto
+%% 344.333 359.291 lineto
+%% 346.533 358.091 lineto
+%% 348.733 356.791 lineto
+%% 350.933 355.591 lineto
+%% 353.033 354.491 lineto
+%% 355.233 353.491 lineto
+%% 357.433 352.391 lineto
+%% 359.633 351.392 lineto
+%% 361.733 350.492 lineto
+%% 363.933 349.492 lineto
+%% 366.133 348.692 lineto
+%%stroke
+%% 
+ 
+%%% 25                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ 1.0 1.5 ] 0.0 setdash
+%% 1.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 366.14 348.68 moveto
+%% 368.34 347.88 lineto
+%% 370.54 347.08 lineto
+%% 372.639 346.38 lineto
+%% 374.839 345.68 lineto
+%% 377.039 344.98 lineto
+%% 379.239 344.481 lineto
+%% 381.439 343.881 lineto
+%% 383.539 343.381 lineto
+%% 385.739 342.881 lineto
+%% 387.939 342.481 lineto
+%% 390.139 342.082 lineto
+%% 392.239 341.782 lineto
+%% 394.439 341.482 lineto
+%% 396.639 341.182 lineto
+%% 398.839 340.982 lineto
+%% 401.039 340.782 lineto
+%% 403.138 340.582 lineto
+%% 405.338 340.482 lineto
+%% 407.538 340.383 lineto
+%% 409.738 340.283 lineto
+%% 411.938 340.283 lineto
+%% 414.038 340.283 lineto
+%% 416.238 340.283 lineto
+%% 418.438 340.283 lineto
+%% 420.638 340.283 lineto
+%% 422.738 340.283 lineto
+%% 424.938 340.283 lineto
+%% 427.138 340.283 lineto
+%% 429.338 340.283 lineto
+%% 431.538 340.283 lineto
+%% 433.637 340.283 lineto
+%% 435.837 340.283 lineto
+%% 438.037 340.283 lineto
+%% 440.237 340.283 lineto
+%% 442.437 340.283 lineto
+%% 444.537 340.283 lineto
+%% 446.737 340.283 lineto
+%% 447.837 340.283 lineto
+%%stroke
+%% 
+ 
+% 26                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 1.2 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+stroke
+ 
+ 
+% 27                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 2.4 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+stroke
+ 
+ 
+% 28                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 1.2 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+ 413.44 480.28 moveto
+ 437.84 480.28 lineto
+ 143.94 376.98 moveto
+ 146.14 408.58 lineto
+ 148.24 429.18 lineto
+ 150.439 445.58 lineto
+ 152.639 458.28 lineto
+ 154.839 467.879 lineto
+ 157.039 475.379 lineto
+ 159.139 481.379 lineto
+ 161.339 486.079 lineto
+ 163.539 489.779 lineto
+ 165.739 491.579 lineto
+ 167.939 492.979 lineto
+ 170.039 492.679 lineto
+ 172.239 492.479 lineto
+ 174.439 491.779 lineto
+ 176.639 490.279 lineto
+ 178.739 488.979 lineto
+ 180.938 486.479 lineto
+ 183.138 484.08 lineto
+ 185.338 482.08 lineto
+ 187.538 480.08 lineto
+ 189.638 477.58 lineto
+ 191.838 474.98 lineto
+ 194.038 473.181 lineto
+ 196.238 471.081 lineto
+ 198.438 468.881 lineto
+ 200.538 466.481 lineto
+ 202.738 464.281 lineto
+ 204.938 461.781 lineto
+ 207.138 459.281 lineto
+ 209.238 457.082 lineto
+ 211.438 455.082 lineto
+ 213.637 453.182 lineto
+ 215.837 450.582 lineto
+ 218.037 448.482 lineto
+ 220.137 446.382 lineto
+ 222.337 444.282 lineto
+ 224.537 442.183 lineto
+ 226.737 440.083 lineto
+ 228.937 438.383 lineto
+ 231.037 436.583 lineto
+ 233.237 434.283 lineto
+ 235.437 432.483 lineto
+ 237.637 430.684 lineto
+ 239.737 428.784 lineto
+ 241.937 426.784 lineto
+ 244.136 424.984 lineto
+ 246.336 423.284 lineto
+ 248.536 421.684 lineto
+ 250.636 419.984 lineto
+ 252.836 418.485 lineto
+ 255.036 416.885 lineto
+ 257.236 415.085 lineto
+ 259.436 413.485 lineto
+ 261.536 412.085 lineto
+ 263.736 410.485 lineto
+ 265.936 408.785 lineto
+ 268.136 407.286 lineto
+ 270.236 405.986 lineto
+ 272.436 404.486 lineto
+ 274.635 402.986 lineto
+ 276.835 401.586 lineto
+ 279.035 400.087 lineto
+ 281.135 398.687 lineto
+ 283.335 397.287 lineto
+ 285.535 395.787 lineto
+ 287.735 394.287 lineto
+ 289.935 392.788 lineto
+ 292.035 391.288 lineto
+ 294.235 389.688 lineto
+ 296.435 387.988 lineto
+ 298.635 386.388 lineto
+ 300.735 384.888 lineto
+ 302.935 383.089 lineto
+ 305.135 381.589 lineto
+ 307.334 379.989 lineto
+ 309.534 378.289 lineto
+ 311.634 376.489 lineto
+ 313.834 374.99 lineto
+ 316.034 373.19 lineto
+ 318.234 371.59 lineto
+ 320.434 369.99 lineto
+ 322.534 368.39 lineto
+ 324.734 366.89 lineto
+ 326.934 365.291 lineto
+ 329.134 363.791 lineto
+ 331.234 362.391 lineto
+ 333.434 360.991 lineto
+ 335.634 359.691 lineto
+ 337.833 358.391 lineto
+ 340.033 357.092 lineto
+ 342.133 355.892 lineto
+ 344.333 354.692 lineto
+ 346.533 353.592 lineto
+ 348.733 352.492 lineto
+ 350.933 351.392 lineto
+ 353.033 350.492 lineto
+ 355.233 349.592 lineto
+ 357.433 348.692 lineto
+ 359.633 347.893 lineto
+ 361.733 347.093 lineto
+ 363.933 346.393 lineto
+ 366.133 345.693 lineto
+stroke
+ 
+ 
+% 29                  pathnumber
+% strokedpath
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 1.2 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+newpath
+ 366.14 345.68 moveto
+ 368.34 345.08 lineto
+ 370.54 344.48 lineto
+ 372.639 343.98 lineto
+ 374.839 343.481 lineto
+ 377.039 343.081 lineto
+ 379.239 342.681 lineto
+ 381.439 342.281 lineto
+ 383.539 341.981 lineto
+ 385.739 341.781 lineto
+ 387.939 341.481 lineto
+ 390.139 341.281 lineto
+ 392.239 341.182 lineto
+ 394.439 340.982 lineto
+ 396.639 340.882 lineto
+ 398.839 340.782 lineto
+ 401.039 340.682 lineto
+ 403.138 340.582 lineto
+ 405.338 340.582 lineto
+ 407.538 340.482 lineto
+ 409.738 340.482 lineto
+ 411.938 340.383 lineto
+ 414.038 340.383 lineto
+ 416.238 340.383 lineto
+ 418.438 340.383 lineto
+ 420.638 340.383 lineto
+ 422.738 340.383 lineto
+ 424.938 340.283 lineto
+ 427.138 340.283 lineto
+ 429.338 340.283 lineto
+ 431.538 340.283 lineto
+ 433.637 340.283 lineto
+ 435.837 340.283 lineto
+ 438.037 340.283 lineto
+ 440.237 340.283 lineto
+ 442.437 340.283 lineto
+ 444.537 340.283 lineto
+ 446.737 340.283 lineto
+ 447.837 340.283 lineto
+stroke
+%% 
+ 
+%%% 30                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ 2.0 3.0 ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 31                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 32                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ 2.0 3.0 ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 33                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 146.145 376.08 moveto
+%% 146.145 377.298 145.157 378.285 143.94 378.285 curveto
+%% 142.722 378.285 141.735 377.298 141.735 376.08 curveto
+%% 141.735 374.862 142.722 373.875 143.94 373.875 curveto
+%% 145.157 373.875 146.145 374.862 146.145 376.08 curveto
+%%fill
+%% 
+%% 
+%%% 34                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 35                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 148.345 407.38 moveto
+%% 148.345 408.598 147.357 409.585 146.14 409.585 curveto
+%% 144.922 409.585 143.935 408.598 143.935 407.38 curveto
+%% 143.935 406.162 144.922 405.175 146.14 405.175 curveto
+%% 147.357 405.175 148.345 406.162 148.345 407.38 curveto
+%%fill
+%% 
+%% 
+%%% 36                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 37                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 150.445 428.98 moveto
+%% 150.445 430.198 149.458 431.185 148.24 431.185 curveto
+%% 147.022 431.185 146.035 430.198 146.035 428.98 curveto
+%% 146.035 427.762 147.022 426.775 148.24 426.775 curveto
+%% 149.458 426.775 150.445 427.762 150.445 428.98 curveto
+%%fill
+%% 
+%% 
+%%% 38                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 39                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 152.645 445.08 moveto
+%% 152.645 446.298 151.657 447.285 150.44 447.285 curveto
+%% 149.222 447.285 148.235 446.298 148.235 445.08 curveto
+%% 148.235 443.862 149.222 442.875 150.44 442.875 curveto
+%% 151.657 442.875 152.645 443.862 152.645 445.08 curveto
+%%fill
+%% 
+%% 
+%%% 40                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 41                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 154.845 457.98 moveto
+%% 154.845 459.198 153.857 460.185 152.64 460.185 curveto
+%% 151.422 460.185 150.435 459.198 150.435 457.98 curveto
+%% 150.435 456.762 151.422 455.775 152.64 455.775 curveto
+%% 153.857 455.775 154.845 456.762 154.845 457.98 curveto
+%%fill
+%% 
+%% 
+%%% 42                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 43                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 157.045 467.88 moveto
+%% 157.045 469.098 156.057 470.085 154.84 470.085 curveto
+%% 153.622 470.085 152.635 469.098 152.635 467.88 curveto
+%% 152.635 466.662 153.622 465.675 154.84 465.675 curveto
+%% 156.057 465.675 157.045 466.662 157.045 467.88 curveto
+%%fill
+%% 
+%% 
+%%% 44                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 45                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 159.245 476.38 moveto
+%% 159.245 477.598 158.258 478.585 157.04 478.585 curveto
+%% 155.822 478.585 154.835 477.598 154.835 476.38 curveto
+%% 154.835 475.162 155.822 474.175 157.04 474.175 curveto
+%% 158.258 474.175 159.245 475.162 159.245 476.38 curveto
+%%fill
+%% 
+%% 
+%%% 46                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 47                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 161.345 481.88 moveto
+%% 161.345 483.098 160.357 484.085 159.14 484.085 curveto
+%% 157.922 484.085 156.935 483.098 156.935 481.88 curveto
+%% 156.935 480.662 157.922 479.675 159.14 479.675 curveto
+%% 160.357 479.675 161.345 480.662 161.345 481.88 curveto
+%%fill
+%% 
+%% 
+%%% 48                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 49                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 163.545 487.18 moveto
+%% 163.545 488.398 162.557 489.385 161.34 489.385 curveto
+%% 160.122 489.385 159.135 488.398 159.135 487.18 curveto
+%% 159.135 485.962 160.122 484.975 161.34 484.975 curveto
+%% 162.557 484.975 163.545 485.962 163.545 487.18 curveto
+%%fill
+%% 
+%% 
+%%% 50                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 51                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 165.745 490.18 moveto
+%% 165.745 491.398 164.758 492.385 163.54 492.385 curveto
+%% 162.322 492.385 161.335 491.398 161.335 490.18 curveto
+%% 161.335 488.962 162.322 487.975 163.54 487.975 curveto
+%% 164.758 487.975 165.745 488.962 165.745 490.18 curveto
+%%fill
+%% 
+%% 
+%%% 52                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 53                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 167.945 491.98 moveto
+%% 167.945 493.198 166.958 494.185 165.74 494.185 curveto
+%% 164.522 494.185 163.535 493.198 163.535 491.98 curveto
+%% 163.535 490.762 164.522 489.775 165.74 489.775 curveto
+%% 166.958 489.775 167.945 490.762 167.945 491.98 curveto
+%%fill
+%% 
+%% 
+%%% 54                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 55                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 172.245 493.28 moveto
+%% 172.245 494.498 171.258 495.485 170.04 495.485 curveto
+%% 168.822 495.485 167.835 494.498 167.835 493.28 curveto
+%% 167.835 492.062 168.822 491.075 170.04 491.075 curveto
+%% 171.258 491.075 172.245 492.062 172.245 493.28 curveto
+%%fill
+%% 
+%% 
+%%% 56                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 57                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 176.645 492.18 moveto
+%% 176.645 493.398 175.657 494.385 174.44 494.385 curveto
+%% 173.222 494.385 172.235 493.398 172.235 492.18 curveto
+%% 172.235 490.962 173.222 489.975 174.44 489.975 curveto
+%% 175.657 489.975 176.645 490.962 176.645 492.18 curveto
+%%fill
+%% 
+%% 
+%%% 58                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 59                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 180.945 488.88 moveto
+%% 180.945 490.098 179.958 491.085 178.74 491.085 curveto
+%% 177.522 491.085 176.535 490.098 176.535 488.88 curveto
+%% 176.535 487.662 177.522 486.675 178.74 486.675 curveto
+%% 179.958 486.675 180.945 487.662 180.945 488.88 curveto
+%%fill
+%% 
+%% 
+%%% 60                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 61                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 185.345 484.58 moveto
+%% 185.345 485.798 184.357 486.785 183.14 486.785 curveto
+%% 181.922 486.785 180.935 485.798 180.935 484.58 curveto
+%% 180.935 483.362 181.922 482.375 183.14 482.375 curveto
+%% 184.357 482.375 185.345 483.362 185.345 484.58 curveto
+%%fill
+%% 
+%% 
+%%% 62                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 63                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 194.045 475.98 moveto
+%% 194.045 477.198 193.057 478.185 191.84 478.185 curveto
+%% 190.622 478.185 189.635 477.198 189.635 475.98 curveto
+%% 189.635 474.762 190.622 473.775 191.84 473.775 curveto
+%% 193.057 473.775 194.045 474.762 194.045 475.98 curveto
+%%fill
+%% 
+%% 
+%%% 64                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 65                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 204.945 464.38 moveto
+%% 204.945 465.598 203.958 466.585 202.74 466.585 curveto
+%% 201.522 466.585 200.535 465.598 200.535 464.38 curveto
+%% 200.535 463.162 201.522 462.175 202.74 462.175 curveto
+%% 203.958 462.175 204.945 463.162 204.945 464.38 curveto
+%%fill
+%% 
+%% 
+%%% 66                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 67                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 215.845 452.98 moveto
+%% 215.845 454.198 214.857 455.185 213.64 455.185 curveto
+%% 212.422 455.185 211.435 454.198 211.435 452.98 curveto
+%% 211.435 451.762 212.422 450.775 213.64 450.775 curveto
+%% 214.857 450.775 215.845 451.762 215.845 452.98 curveto
+%%fill
+%% 
+%% 
+%%% 68                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 69                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 226.745 442.38 moveto
+%% 226.745 443.598 225.758 444.585 224.54 444.585 curveto
+%% 223.322 444.585 222.335 443.598 222.335 442.38 curveto
+%% 222.335 441.162 223.322 440.175 224.54 440.175 curveto
+%% 225.758 440.175 226.745 441.162 226.745 442.38 curveto
+%%fill
+%% 
+%% 
+%%% 70                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 71                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 237.645 432.38 moveto
+%% 237.645 433.598 236.657 434.585 235.44 434.585 curveto
+%% 234.222 434.585 233.235 433.598 233.235 432.38 curveto
+%% 233.235 431.162 234.222 430.175 235.44 430.175 curveto
+%% 236.657 430.175 237.645 431.162 237.645 432.38 curveto
+%%fill
+%% 
+%% 
+%%% 72                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 73                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 248.545 423.48 moveto
+%% 248.545 424.698 247.557 425.685 246.34 425.685 curveto
+%% 245.122 425.685 244.135 424.698 244.135 423.48 curveto
+%% 244.135 422.262 245.122 421.275 246.34 421.275 curveto
+%% 247.557 421.275 248.545 422.262 248.545 423.48 curveto
+%%fill
+%% 
+%% 
+%%% 74                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 75                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 259.445 415.18 moveto
+%% 259.445 416.398 258.458 417.385 257.24 417.385 curveto
+%% 256.022 417.385 255.035 416.398 255.035 415.18 curveto
+%% 255.035 413.962 256.022 412.975 257.24 412.975 curveto
+%% 258.458 412.975 259.445 413.962 259.445 415.18 curveto
+%%fill
+%% 
+%% 
+%%% 76                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 77                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 270.345 407.48 moveto
+%% 270.345 408.698 269.357 409.685 268.14 409.685 curveto
+%% 266.922 409.685 265.935 408.698 265.935 407.48 curveto
+%% 265.935 406.262 266.922 405.275 268.14 405.275 curveto
+%% 269.357 405.275 270.345 406.262 270.345 407.48 curveto
+%%fill
+%% 
+%% 
+%%% 78                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 79                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 281.245 400.18 moveto
+%% 281.245 401.398 280.258 402.385 279.04 402.385 curveto
+%% 277.822 402.385 276.835 401.398 276.835 400.18 curveto
+%% 276.835 398.962 277.822 397.975 279.04 397.975 curveto
+%% 280.258 397.975 281.245 398.962 281.245 400.18 curveto
+%%fill
+%% 
+%% 
+%%% 80                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 81                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 292.145 392.78 moveto
+%% 292.145 393.998 291.157 394.985 289.94 394.985 curveto
+%% 288.722 394.985 287.735 393.998 287.735 392.78 curveto
+%% 287.735 391.562 288.722 390.575 289.94 390.575 curveto
+%% 291.157 390.575 292.145 391.562 292.145 392.78 curveto
+%%fill
+%% 
+%% 
+%%% 82                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 83                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 302.945 384.88 moveto
+%% 302.945 386.098 301.958 387.085 300.74 387.085 curveto
+%% 299.522 387.085 298.535 386.098 298.535 384.88 curveto
+%% 298.535 383.662 299.522 382.675 300.74 382.675 curveto
+%% 301.958 382.675 302.945 383.662 302.945 384.88 curveto
+%%fill
+%% 
+%% 
+%%% 84                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 85                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 313.845 376.48 moveto
+%% 313.845 377.698 312.857 378.685 311.64 378.685 curveto
+%% 310.422 378.685 309.435 377.698 309.435 376.48 curveto
+%% 309.435 375.262 310.422 374.275 311.64 374.275 curveto
+%% 312.857 374.275 313.845 375.262 313.845 376.48 curveto
+%%fill
+%% 
+%% 
+%%% 86                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 87                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 324.745 368.18 moveto
+%% 324.745 369.398 323.758 370.385 322.54 370.385 curveto
+%% 321.322 370.385 320.335 369.398 320.335 368.18 curveto
+%% 320.335 366.962 321.322 365.975 322.54 365.975 curveto
+%% 323.758 365.975 324.745 366.962 324.745 368.18 curveto
+%%fill
+%% 
+%% 
+%%% 88                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 89                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 335.645 360.68 moveto
+%% 335.645 361.898 334.657 362.885 333.44 362.885 curveto
+%% 332.222 362.885 331.235 361.898 331.235 360.68 curveto
+%% 331.235 359.462 332.222 358.475 333.44 358.475 curveto
+%% 334.657 358.475 335.645 359.462 335.645 360.68 curveto
+%%fill
+%% 
+%% 
+%%% 90                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 91                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 346.545 354.38 moveto
+%% 346.545 355.598 345.557 356.585 344.34 356.585 curveto
+%% 343.122 356.585 342.135 355.598 342.135 354.38 curveto
+%% 342.135 353.162 343.122 352.175 344.34 352.175 curveto
+%% 345.557 352.175 346.545 353.162 346.545 354.38 curveto
+%%fill
+%% 
+%% 
+%%% 92                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 93                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 357.445 349.18 moveto
+%% 357.445 350.398 356.458 351.385 355.24 351.385 curveto
+%% 354.022 351.385 353.035 350.398 353.035 349.18 curveto
+%% 353.035 347.962 354.022 346.975 355.24 346.975 curveto
+%% 356.458 346.975 357.445 347.962 357.445 349.18 curveto
+%%fill
+%% 
+%% 
+%%% 94                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 95                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 368.345 345.38 moveto
+%% 368.345 346.598 367.357 347.585 366.14 347.585 curveto
+%% 364.922 347.585 363.935 346.598 363.935 345.38 curveto
+%% 363.935 344.162 364.922 343.175 366.14 343.175 curveto
+%% 367.357 343.175 368.345 344.162 368.345 345.38 curveto
+%%fill
+%% 
+%% 
+%%% 96                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 97                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 379.245 342.78 moveto
+%% 379.245 343.998 378.258 344.985 377.04 344.985 curveto
+%% 375.822 344.985 374.835 343.998 374.835 342.78 curveto
+%% 374.835 341.562 375.822 340.575 377.04 340.575 curveto
+%% 378.258 340.575 379.245 341.562 379.245 342.78 curveto
+%%fill
+%% 
+%% 
+%%% 98                  pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 99                  pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 390.145 341.28 moveto
+%% 390.145 342.498 389.157 343.485 387.94 343.485 curveto
+%% 386.722 343.485 385.735 342.498 385.735 341.28 curveto
+%% 385.735 340.062 386.722 339.075 387.94 339.075 curveto
+%% 389.157 339.075 390.145 340.062 390.145 341.28 curveto
+%%fill
+%% 
+%% 
+%%% 100                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 101                 pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 401.045 340.58 moveto
+%% 401.045 341.798 400.057 342.785 398.84 342.785 curveto
+%% 397.622 342.785 396.635 341.798 396.635 340.58 curveto
+%% 396.635 339.362 397.622 338.375 398.84 338.375 curveto
+%% 400.057 338.375 401.045 339.362 401.045 340.58 curveto
+%%fill
+%% 
+%% 
+%%% 102                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 103                 pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 411.945 340.28 moveto
+%% 411.945 341.498 410.958 342.485 409.74 342.485 curveto
+%% 408.522 342.485 407.535 341.498 407.535 340.28 curveto
+%% 407.535 339.062 408.522 338.075 409.74 338.075 curveto
+%% 410.958 338.075 411.945 339.062 411.945 340.28 curveto
+%%fill
+%% 
+%% 
+%%% 104                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 105                 pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 422.845 340.28 moveto
+%% 422.845 341.498 421.857 342.485 420.64 342.485 curveto
+%% 419.422 342.485 418.435 341.498 418.435 340.28 curveto
+%% 418.435 339.062 419.422 338.075 420.64 338.075 curveto
+%% 421.857 338.075 422.845 339.062 422.845 340.28 curveto
+%%fill
+%% 
+%% 
+%%% 106                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 107                 pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 433.745 340.28 moveto
+%% 433.745 341.498 432.758 342.485 431.54 342.485 curveto
+%% 430.322 342.485 429.335 341.498 429.335 340.28 curveto
+%% 429.335 339.062 430.322 338.075 431.54 338.075 curveto
+%% 432.758 338.075 433.745 339.062 433.745 340.28 curveto
+%%fill
+%% 
+%% 
+%%% 108                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 109                 pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 444.645 340.28 moveto
+%% 444.645 341.498 443.657 342.485 442.44 342.485 curveto
+%% 441.222 342.485 440.235 341.498 440.235 340.28 curveto
+%% 440.235 339.062 441.222 338.075 442.44 338.075 curveto
+%% 443.657 338.075 444.645 339.062 444.645 340.28 curveto
+%%fill
+%% 
+%% 
+%%% 110                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 111                 pathnumber
+%%% filledpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 427.845 460.28 moveto
+%% 427.845 461.498 426.857 462.485 425.64 462.485 curveto
+%% 424.422 462.485 423.435 461.498 423.435 460.28 curveto
+%% 423.435 459.062 424.422 458.075 425.64 458.075 curveto
+%% 426.857 458.075 427.845 459.062 427.845 460.28 curveto
+%%fill
+%% 
+%% 
+%%% 112                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.2 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%%stroke
+%% 
+%% 
+%%% 113                 pathnumber
+%%% strokedpath
+%% 0 setlinecap
+%% 10.0 setmiterlimit
+%% 0 setlinejoin
+%% [ ] 0.0 setdash
+%% 0.4 setlinewidth
+%% 0.0 0.0 0.0 1.0 setcmykcolor
+%%newpath
+%% 142.84 340.28 moveto
+%% 447.839 340.28 lineto
+%% 447.839 516.28 lineto
+%% 142.84 516.28 lineto
+%% 142.84 340.28 lineto
+%%stroke
+grestore %}
+ grestore %}
+ restore %}
+ 
+ 612 792 setPageSize
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  17.2154 0.0 0.0 17.2154 303.6 408.56 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 311.88 408.56 0  setshowparams
+(17) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  11.9552 0.0 0.0 11.9552 311.88 406.04 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 318.96 406.04 0  setshowparams
+(16) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 323.28 408.56 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 335.639 408.56 0  setshowparams
+(2b) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR12 CMR12 nonstandard font
+(CMR12) cvn findfont [  11.9552 0.0 0.0 11.9552 342.36 414.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 354.12 414.8 0  setshowparams
+(3136) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 354.6 408.56 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 366.96 408.56 0  setshowparams
+(4f) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMSY10 CMSY10 nonstandard font
+(CMSY10) cvn findfont [  17.2154 0.0 0.0 17.2154 371.76 408.56 ] makefont setfont
+% Computer Modern FamilyName
+% CMSY10 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 388.919 408.56 0  setshowparams
+(21) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  17.2154 0.0 0.0 17.2154 393.719 408.56 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 403.919 408.56 0  setshowparams
+(16) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 407.759 408.56 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 420.119 408.56 0  setshowparams
+(2b) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 423.958 408.56 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 435.838 408.56 0  setshowparams
+(58) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  17.2154 0.0 0.0 17.2154 331.92 388.52 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 344.4 388.52 0  setshowparams
+(45) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  11.9552 0.0 0.0 11.9552 344.4 386.0 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 350.16 386.0 0  setshowparams
+(17) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 356.28 388.52 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 368.639 388.52 0  setshowparams
+(3d) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 373.439 388.52 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 397.199 388.52 0  setshowparams
+(383030) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 402.359 388.52 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 435.839 388.52 0  setshowparams
+(4d6556) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 388.56 454.4 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 408.359 454.4 0  setshowparams
+(450b) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 358.68 474.32 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 408.479 474.32 0  setshowparams
+(42656e686172) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 386.04 494.48 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 396.359 494.48 0  setshowparams
+(46) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 395.88 494.48 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 408.359 494.48 0  setshowparams
+(47) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  17.2154 0.0 0.0 17.2154 258.0 305.48 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 271.32 305.48 0  setshowparams
+(51) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR12 CMR12 nonstandard font
+(CMR12) cvn findfont [  11.9552 0.0 0.0 11.9552 271.32 311.72 ] makefont setfont
+% Computer Modern FamilyName
+% CMR12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 277.199 311.72 0  setshowparams
+(32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 282.84 305.48 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 320.28 305.48 0  setshowparams
+(28476556) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR12 CMR12 nonstandard font
+(CMR12) cvn findfont [  11.9552 0.0 0.0 11.9552 320.28 311.72 ] makefont setfont
+% Computer Modern FamilyName
+% CMR12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 326.16 311.72 0  setshowparams
+(32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 326.76 305.48 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 332.88 305.48 0  setshowparams
+(29) awidthshowhex
+gsave %{
+  
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  0.0 17.2154 -17.2154 0.0 115.559 338.961 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 115.559 354.801 0  setshowparams
+(3130) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR12 CMR12 nonstandard font
+(CMR12) cvn findfont [  0.0 11.9552 -11.9552 0.0 109.32 354.801 ] makefont setfont
+% Computer Modern FamilyName
+% CMR12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 109.32 366.56 0  setshowparams
+(3338) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  0.0 17.2154 -17.2154 0.0 115.559 372.201 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 115.559 390.561 0  setshowparams
+(641b) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMMI12 CMMI12 nonstandard font
+(CMMI12) cvn findfont [  0.0 17.2154 -17.2154 0.0 115.559 391.16 ] makefont setfont
+% Computer Modern FamilyName
+% CMMI12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 115.559 421.64 0  setshowparams
+(3d6451) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR12 CMR12 nonstandard font
+(CMR12) cvn findfont [  0.0 11.9552 -11.9552 0.0 109.32 421.64 ] makefont setfont
+% Computer Modern FamilyName
+% CMR12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 109.32 427.52 0  setshowparams
+(32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  0.0 17.2154 -17.2154 0.0 115.559 433.281 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 115.559 459.68 0  setshowparams
+(28636d) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR12 CMR12 nonstandard font
+(CMR12) cvn findfont [  0.0 11.9552 -11.9552 0.0 109.32 459.681 ] makefont setfont
+% Computer Modern FamilyName
+% CMR12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 109.32 465.561 0  setshowparams
+(32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  0.0 17.2154 -17.2154 0.0 115.559 465.92 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 115.559 505.16 0  setshowparams
+(2f476556) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR12 CMR12 nonstandard font
+(CMR12) cvn findfont [  0.0 11.9552 -11.9552 0.0 109.32 505.161 ] makefont setfont
+% Computer Modern FamilyName
+% CMR12 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 109.32 511.041 0  setshowparams
+(32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  0.0 17.2154 -17.2154 0.0 115.559 511.64 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 115.559 517.76 0  setshowparams
+(29) awidthshowhex
+grestore %}
+  
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 440.4 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 460.56 324.8 0  setshowparams
+(312e34) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 396.84 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 416.999 324.8 0  setshowparams
+(312e32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 353.279 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 373.439 324.8 0  setshowparams
+(312e30) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 309.719 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 329.879 324.8 0  setshowparams
+(302e38) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 266.159 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 286.318 324.8 0  setshowparams
+(302e36) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 222.479 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 242.638 324.8 0  setshowparams
+(302e34) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 179.038 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 199.198 324.8 0  setshowparams
+(302e32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 145.438 324.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 165.598 324.8 0  setshowparams
+(302e30) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 122.04 510.8 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 510.8 0  setshowparams
+(3134) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 122.04 485.72 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 485.72 0  setshowparams
+(3132) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 122.04 460.52 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 460.52 0  setshowparams
+(3130) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 129.96 435.32 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 435.32 0  setshowparams
+(38) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 129.96 410.12 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 410.12 0  setshowparams
+(36) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 129.96 385.04 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 385.04 0  setshowparams
+(34) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 129.96 359.84 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 359.84 0  setshowparams
+(32) awidthshowhex
+ 
+ 0 setlinecap
+ 10.0 setmiterlimit
+ 0 setlinejoin
+ [ ] 0.0 setdash
+ 0.12 setlinewidth
+ 0.0 0.0 0.0 1.0 setcmykcolor
+% CMR17 CMR17 nonstandard font
+(CMR17) cvn findfont [  17.2154 0.0 0.0 17.2154 129.96 334.76 ] makefont setfont
+% Computer Modern FamilyName
+% CMR17 FullName
+% Medium Weight
+  0 0 moveto
+ 0.0 0.0 32 0.0 0.0 137.88 334.76 0  setshowparams
+(30) awidthshowhex
+restore %}
+showpage
+%%BoundingBox: 109 305 460 517 
+%%Page: 1 1
+% normal end reached by pstoedit.pro
+%%Trailer
+%%Pages: 1
+%%EOF

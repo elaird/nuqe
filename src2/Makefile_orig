@@ -1,0 +1,21 @@
+objects = foo.o TT_generator.o TT_drawer.o TT_event.o TT_nucleus.o TT_params.o
+root_cflags = `root-config --cflags`
+foo : $(objects)
+	g++ -o foo $(objects) `root-config --cflags --libs`
+
+foo.o : foo.C TT_generator.h TT_drawer.h TT_event.h TT_nucleus.h TT_params.h
+	g++ -c foo.C $(root_cflags)
+TT_generator.o : TT_generator.C TT_generator.h TT_drawer.h TT_event.h TT_nucleus.h TT_params.h
+	g++ -c TT_generator.C $(root_cflags)
+TT_drawer.o : TT_drawer.C TT_drawer.h TT_event.h TT_nucleus.h TT_params.h
+	g++ -c TT_drawer.C $(root_cflags)
+TT_event.o : TT_event.C TT_event.h TT_nucleus.h TT_params.h
+	g++ -c TT_event.C $(root_cflags)
+TT_nucleus.o : TT_nucleus.C TT_nucleus.h TT_params.h
+	g++ -c TT_nucleus.C $(root_cflags)
+TT_params.o : TT_params.C TT_params.h
+	g++ -c TT_params.C $(root_cflags)
+
+.PHONY : clean
+clean :
+	-rm foo $(objects)

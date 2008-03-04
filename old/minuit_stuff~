@@ -1,0 +1,15 @@
+////////////////////////////////////////////////////////////////////////
+void Minuit_FCN(Int_t &npar, Double_t *gin, Double_t &f, Double_t *par, Int_t iflag)
+{
+  //TT_event foo;
+  //foo.Init(current_drawer->f_params,current_drawer->f_nucleus,current_drawer->f_Enu,par[0],par[1],par[2],par[3]);
+  //foo.Evaluate_dsigma_dall();
+  //f=-1.0*foo.f_dsigma_dall;
+
+  ////for (Int_t iPar=0;iPar<4;iPar++) {
+  ////  printf("par[%d]=%8.6g; ",iPar,par[iPar]);
+  ////}
+  ////printf("f=%8.6g",f);
+  ////cout << endl;
+
+}

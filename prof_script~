@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SOURCES=$(ls src/*.C)
+g++ -o foo_pg $SOURCES `root-config --cflags --libs` -pg
+
+if [ "$?" = "0" ]; then
+    ./foo_pg
+    gprof ./foo_pg > prof_log
+    more prof_log
+fi

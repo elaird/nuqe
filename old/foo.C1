@@ -1,0 +1,179 @@
+//implementing nucl-th/0512004v4
+// ./m to compile
+
+////list of ambiguities/issues
+//--de Forest prescription
+//--ksi in F2?
+//--Mpi+-0?
+//--poles in Smith-Moniz form factors?
+//--check+/- in form factor denoms
+//--M value fixed?
+//--use delta function to eliminate the integral over E?
+//--overall sign of epsilon
+//--epsilon upper/lower -1 proof
+//--figure out why no imaginary stuff is showing up
+//--what if contraction is complex?
+//--SM delta function
+//--sign of e_bind
+//--understand equation (21)
+//--normalize SF to #neutrons
+//--args, options, seed
+//--form factors
+//--xsec issue at Enu=1.0,Emu=0.715,cth=0.805
+//--integrate over a flux?
+//--nuclear magneton
+//--hadronic tensor (M!=MA?)
+//--low momentum cutoff in Determine_kprime
+//--proton mass!=neutron mass
+//--multiple cos(theta) solutions in two regimes: high and low
+//----high problems disappear when e_bind=0, but low problems remain
+//----not sure if these are physical
+//--equation (8) (e.g.) is lacking a delta function
+//--average e_bind for SM
+//--Double_t ok?
+//--choose initial momenta differently
+//--small discriminant cases
+//--small p_lepprime cases (nan)
+
+#include <iostream>
+#include "Rtypes.h"
+#include "TT_param_class.h"
+#include "TU_class.h"
+#include "TRandom3.h"
+#include "TGraph2D.h"
+#include "TGraphErrors.h"
+#include "TGraph.h"
+#include "TFile.h"
+#include "TTree.h"
+
+using namespace std;
+
+Int_t xs_e(TT_param_class*);
+
+////////////////////////////////////////////////////////////////////////
+Int_t main(Int_t argc,char **argv) {
+  Bool_t help=0;
+
+  if (argc!=2) help=1;
+  if (help) {
+    cout << "--USAGE: " << argv[0] << " CONFIG_FILE" << endl;
+    cout << "--for further help, see readme" << endl;
+    return 0;
+  }
+  
+  //read in config file
+  TT_param_class *params = new TT_param_class(argv[1]);
+
+  xs_e(params);
+
+  delete params;
+  return 0;
+}
+
+
+////////////////////////////////////////////////////////////////////////
+Int_t xs_e(TT_param_class *params) {
+
+  //tree for debuging
+  TTree *tree = new TTree("tree","");
+  Int_t tree_problem;
+  Double_t tree_E_lepprime;
+  Double_t tree_p_lower[4];
+  tree->Branch("problem_branch",&tree_problem,"problem/I");
+  tree->Branch("E_lepprime_branch",&tree_E_lepprime,"E_lepprime/D");
+  tree->Branch("p_lower_branch",tree_p_lower,"p_lower[4]/D");
+
+  Double_t Enu=0.8;
+  const Double_t unit_conv=0.389379e-30;
+  Int_t N_E=1;
+  
+  Double_t E_lepprime[N_E];
+  Double_t         XS[N_E];
+  Double_t     XS_err[N_E];
+  Double_t    XS_xerr[N_E];
+  
+  Double_t E_min=Enu;//1.01*params->f_m_lep;
+  Double_t E_max=Enu;///2.0;
+
+  for (Int_t iE=0;iE<N_E;iE++) {
+    E_lepprime[iE]=iE*(E_max-E_min)/N_E+E_min;
+  }
+
+  for (Int_t iE=0;iE<N_E;iE++) {
+    TU_class foo(params,Enu,E_lepprime[iE],tree,&tree_E_lepprime,tree_p_lower,&tree_problem);
+    foo.Compute_XS();
+
+    XS    [iE]=unit_conv*foo.f_d3sigma_d3kprime;
+    XS_err[iE]=unit_conv*foo.f_d3sigma_d3kprime_err;
+    XS_xerr[iE]=0.0;
+    cout << "forbidden, problems, E, xs, err: " << foo.f_d3sigma_d3kprime_forbidden << ","
+	 << foo.f_d3sigma_d3kprime_problems << "," << E_lepprime[iE] << "," << XS[iE] << "," << XS_err[iE] << endl;
+  }
+  
+  TGraphErrors graph(N_E,E_lepprime,XS,XS_xerr,XS_err);
+  graph.SetName("xs_e");
+  graph.SetTitle(";E_{#mu} (GeV);d#sigma/dE_{#mu} (cm^{2}/MeV);z-title");
+  
+  TFile f("~elaird/ccqe/xs_ted/xs.root","RECREATE");
+  graph.Write();
+  tree->Write();
+  f.Close();
+
+  return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////
+//Int_t xs_e_costheta(TT_param_class *params) {
+//
+//  Double_t Enu=1.0;
+//  
+//  Int_t N_E=20;
+//  Int_t N_CT=20;
+//  
+//  Double_t  E_lepprime[N_E*N_CT];
+//  Double_t CT_lepprime[N_E*N_CT];
+//  Double_t          XS[N_E*N_CT];
+//  Double_t      XS_err[N_E*N_CT];
+//  
+//  Double_t E_min=params->f_m_lep;
+//  Double_t E_max=Enu;
+//  Double_t CT_min=-1.0;
+//  Double_t CT_max=1.0;
+//
+//  for (Int_t iE=0;iE<N_E;iE++) {
+//    for (Int_t iCT=0;iCT<N_CT;iCT++) {
+//  
+//      Int_t index=iE*N_CT+iCT;
+//  
+//      E_lepprime [index]=iE*(E_max-E_min)/(N_E-1)+E_min;
+//      CT_lepprime[index]=iCT*(CT_max-CT_min)/(N_CT-1)+CT_min;
+//  
+//      Double_t kprime_lower[4];
+//      Double_t p_mag=pow(E_lepprime[index]*E_lepprime[index]-pow(params->f_m_lep,2),0.5);
+//  
+//      kprime_lower[0]=E_lepprime[index];
+//      kprime_lower[1]=p_mag*pow(1-CT_lepprime[index]*CT_lepprime[index],0.5);
+//      kprime_lower[2]=0.0;
+//      kprime_lower[3]=p_mag*CT_lepprime[index];
+//
+//      TT_class foo(params,Enu,kprime_lower);
+//      foo.Compute_XS();
+//
+//      XS    [index]=foo.f_d2sigma_de_dcostheta;
+//      XS_err[index]=foo.f_d2sigma_de_dcostheta_err;
+//    }
+//  }
+//  
+//  TGraph2D ans_graph(N_E*N_CT,CT_lepprime,E_lepprime,XS);
+//  ans_graph.SetName("xs2d");
+//  ans_graph.SetTitle(";x-title;y-title;z-title");
+//  TGraph2D err_graph(N_E*N_CT,CT_lepprime,E_lepprime,XS_err);
+//  err_graph.SetName("xs2d_errs");
+//  err_graph.SetTitle(";x-title;y-title;z-title");
+//  TFile f("~elaird/ccqe/xs_ted/xs.root","RECREATE");
+//  ans_graph.Write();
+//  err_graph.Write();
+//  f.Close();
+//
+//  return 0;
+//}
