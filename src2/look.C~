@@ -13,6 +13,7 @@
 #include "TCanvas.h"
 #include "TH2D.h"
 #include "TF1.h"
+#include "TLine.h"
 
 ////////////////////////////////////////////////////////////////////////
 void Init() {
@@ -536,7 +537,7 @@ void NUANCE_compare(Int_t mode,Int_t energy_point,TString file) {
 }
 
 ////////////////////////////////////////////////////////////////////////
-void flux_compare(Int_t mode) {
+void flux_compare(Int_t mode,TString linlog) {
   Init();
 
   //mine
@@ -552,10 +553,77 @@ void flux_compare(Int_t mode) {
   TTree *nu_trees[NFiles];
   for (Int_t iFile=0;iFile<NFiles;iFile++) {
     TString file;
-    file=Form("../../nuance_from_fnal/oxygen_dipole_mbflux_elin/nuance%d.root",iFile+1);
+    file="../../nuance_from_fnal/oxygen_dipole_mbflux_e"+linlog+Form("/nuance%d.root",iFile+1);
     nu_files[iFile]=new TFile(file);
     gROOT->cd();
     nu_trees[iFile]=(TTree*)(nu_files[iFile]->Get("h3"));
+  }
+
+  const Int_t NLines=29;
+  Double_t linex[NLines];
+  if (linlog=="log") {
+    Int_t iLine;
+    iLine= 0; linex[iLine]=0.1371614;
+    iLine= 1; linex[iLine]=0.1480541;
+    iLine= 2; linex[iLine]=0.1725035;
+    iLine= 3; linex[iLine]=0.2009903;
+    iLine= 4; linex[iLine]=0.2341815;
+    iLine= 5; linex[iLine]=0.2728536;
+    iLine= 6; linex[iLine]=0.3179121;
+    iLine= 7; linex[iLine]=0.3704115;
+    iLine= 8; linex[iLine]=0.4315804;
+    iLine= 9; linex[iLine]=0.5028507;
+    iLine=10; linex[iLine]=0.5858902;
+    iLine=11; linex[iLine]=0.6826431;
+    iLine=12; linex[iLine]=0.7953730;
+    iLine=13; linex[iLine]=0.9267194;
+    iLine=14; linex[iLine]=1.0797561;
+    iLine=15; linex[iLine]=1.2580642;
+    iLine=16; linex[iLine]=1.4658186;
+    iLine=17; linex[iLine]=1.7078801;
+    iLine=18; linex[iLine]=1.9899162;
+    iLine=19; linex[iLine]=2.3185259;
+    iLine=20; linex[iLine]=2.7014029;
+    iLine=21; linex[iLine]=3.1475057;
+    iLine=22; linex[iLine]=3.6672788;
+    iLine=23; linex[iLine]=4.2728839;
+    iLine=24; linex[iLine]=4.9784997;
+    iLine=25; linex[iLine]=5.8006397;
+    iLine=26; linex[iLine]=6.7585426;
+    iLine=27; linex[iLine]=7.8746354;
+    iLine=28; linex[iLine]=8.5000022;
+  }
+  if (linlog=="lin") {
+    Int_t iLine;
+    iLine= 0; linex[iLine]=0.1371614;
+    iLine= 1; linex[iLine]=0.2920288;
+    iLine= 2; linex[iLine]=0.6017636;
+    iLine= 3; linex[iLine]=0.9114983;
+    iLine= 4; linex[iLine]=1.2212331;
+    iLine= 5; linex[iLine]=1.5309679;
+    iLine= 6; linex[iLine]=1.8407026;
+    iLine= 7; linex[iLine]=2.1504375;
+    iLine= 8; linex[iLine]=2.4601721;
+    iLine= 9; linex[iLine]=2.7699069;
+    iLine=10; linex[iLine]=3.0796416;
+    iLine=11; linex[iLine]=3.3893764;
+    iLine=12; linex[iLine]=3.6991110;
+    iLine=13; linex[iLine]=4.0088459;
+    iLine=14; linex[iLine]=4.3185805;
+    iLine=15; linex[iLine]=4.6283154;
+    iLine=16; linex[iLine]=4.9380502;
+    iLine=17; linex[iLine]=5.2477851;
+    iLine=18; linex[iLine]=5.5575195;
+    iLine=19; linex[iLine]=5.8672543;
+    iLine=20; linex[iLine]=6.1769892;
+    iLine=21; linex[iLine]=6.4867241;
+    iLine=22; linex[iLine]=6.7964589;
+    iLine=23; linex[iLine]=7.1061933;
+    iLine=24; linex[iLine]=7.4159282;
+    iLine=25; linex[iLine]=7.7256630;
+    iLine=26; linex[iLine]=8.0353979;
+    iLine=27; linex[iLine]=8.3451328;
+    iLine=28; linex[iLine]=      8.5;
   }
 
   TString *tree_var=0;
@@ -682,7 +750,19 @@ void flux_compare(Int_t mode) {
     h[iHisto]->Draw("esame"); 
     h[iHisto]->Print();
   }
-  
+
+  Double_t y1=nh.GetYaxis()->GetXmin();
+  Double_t y2=nh.GetYaxis()->GetXmax();
+  Double_t xmin=nh.GetXaxis()->GetXmin();
+  Double_t xmax=nh.GetXaxis()->GetXmax();
+  for (Int_t iLine=0;iLine<NLines;iLine++) {
+    TLine line;
+    line.SetLineColor(kGreen);
+    Double_t x=linex[iLine];
+    if (x<xmin || x>xmax) continue;
+    line.DrawLine(x,y1,x,y2);
+  }
+
   TLegend legend(x_leg,0.7,x_leg+0.45,0.9,"#nu_{#mu} + ^{16}O #rightarrow #mu + p + X (E_{#nu} from MB flux)");
   legend.SetBorderSize(0);
   legend.SetFillStyle(0);

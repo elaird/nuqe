@@ -133,7 +133,7 @@ void single_compare(Int_t mode) {
 
 
   //mine
-  TFile f("../../events/single_nofp_mm.root");
+  TFile f("../../../events/single_nofp_mm.root");
   gROOT->cd();
   TTree *tree=(TTree*)f.Get("tree");
   TGraph *gr=(TGraph*)f.Get("ccqe_rate")->Clone();
@@ -541,7 +541,7 @@ void flux_compare(Int_t mode,TString linlog) {
   Init();
 
   //mine
-  TFile f("~/work/boone/ccqe/xs_ted/events/events_mb_4.root");
+  TFile f("~/work/boone/ccqe/xs_ted/../events/events_mb_4.root");
   TTree *tree=(TTree*)f.Get("tree");
   TGraph *gr=(TGraph*)f.Get("ccqe_rate")->Clone();
   Int_t process=4;
@@ -801,7 +801,7 @@ void flux_compare(Int_t mode,TString linlog) {
 void MA_compare1(Int_t mode,Int_t energy_point) {
   Init();
 
-  TFile g(Form("../events_6_nofp_%3d.root",energy_point));
+  TFile g(Form("../../events_6_nofp_%3d.root",energy_point));
   gROOT->cd();
   TTree *gtree=(TTree*)g.Get("tree");
   gtree->SetName("gtree");
@@ -812,7 +812,7 @@ void MA_compare1(Int_t mode,Int_t energy_point) {
   delete ggr;
 
   //mine
-  TFile f(Form("../events_5_nofp_%3d.root",energy_point));
+  TFile f(Form("../../events_5_nofp_%3d.root",energy_point));
   gROOT->cd();
   TTree *tree=(TTree*)f.Get("tree");
   TGraph *gr=(TGraph*)f.Get("ccqe_rate")->Clone();
@@ -1026,8 +1026,8 @@ void MA_compare_800() {
   //mine
   Int_t mode=2;
 
-  //TFile f("../events_5_nofp_800.root");
-  TFile f("../events.root");
+  //TFile f("../../events_5_nofp_800.root");
+  TFile f("../../events.root");
   gROOT->cd();
   TTree *tree=(TTree*)f.Get("tree");
   TGraph *gr=(TGraph*)f.Get("ccqe_rate")->Clone();
@@ -1191,7 +1191,7 @@ void MA_compare(Int_t mode,Int_t energy_point) {
   Init();
 
   //NUANCE mode
-  TFile f4(Form("../events_4_%d.root",energy_point));
+  TFile f4(Form("../../events_4_%d.root",energy_point));
   gROOT->cd();
   TTree *tree4=(TTree*)f4.Get("tree");
   tree4->SetName("tree4");
@@ -1201,7 +1201,7 @@ void MA_compare(Int_t mode,Int_t energy_point) {
   delete gr4;
 
   //A-S SF mode
-  TFile f23(Form("../events_23_%d.root",energy_point));
+  TFile f23(Form("../../events_23_%d.root",energy_point));
   gROOT->cd();
   TTree *tree23=(TTree*)f23.Get("tree");
   tree23->SetName("tree23");
@@ -1352,7 +1352,7 @@ void MA_compare(Int_t mode,Int_t energy_point) {
 
 ////////////////////////////////////////////////////////////////////////
 void q2_look() {
-  TFile f("../events.root");
+  TFile f("../../events.root");
   gROOT->cd();
   TTree *tree=(TTree*)f.Get("tree");
 
@@ -1369,8 +1369,8 @@ void compare1() {
   Init();
 
   //mine
-  TFile f1("../events_1.root");
-  TFile f4("../events_4.root");
+  TFile f1("../../events_1.root");
+  TFile f4("../../events_4.root");
   gROOT->cd();
   TTree *tree1=(TTree*)f1.Get("tree");
   TGraph *gr1=(TGraph*)f1.Get("ccqe_rate");
@@ -1412,7 +1412,7 @@ void compare1() {
 void compare6() {
   Init();
 
-  TFile f1("../events_3.root");
+  TFile f1("../../events_3.root");
   TTree *tree1=(TTree*)f1.Get("tree");
   TGraph *gr1=(TGraph*)f1.Get("ccqe_rate")->Clone();
   Int_t process1=4;
@@ -1420,7 +1420,7 @@ void compare6() {
   gr1->GetPoint(process1,dummy,xs1);
   delete gr1;
 
-  TFile f2("../events_4.root");
+  TFile f2("../../events_4.root");
   TTree *tree2=(TTree*)f2.Get("tree");
   TGraph *gr2=(TGraph*)f2.Get("ccqe_rate")->Clone();
   Int_t process2=1;
