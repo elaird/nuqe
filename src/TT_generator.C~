@@ -29,9 +29,10 @@ Bool_t TT_generator::Generate_events()
 {
   f_keep_going=1;
   f_event_display=1;
+  Double_t EVENT_LIMIT=pow(2,53);
 
   while (f_keep_going) {
-    Long64_t total_accepted_old=f_total_accepted;
+    Double_t total_accepted_old=f_total_accepted;
 
     for (Int_t iProcess=0;iProcess<f_N_Processes;iProcess++) {
       for (Int_t iBin=0;iBin<f_N_rate_bins;iBin++) {
@@ -41,12 +42,20 @@ Bool_t TT_generator::Generate_events()
 	Bool_t got_one=0;
 	while (!got_one) {
 	  f_total_points[iProcess][iBin]++;
+	  if (f_total_points[iProcess][iBin]==EVENT_LIMIT) {
+	    cerr << Form("EVENT LIMIT reached for iProcess=%d,iBin=%d",iProcess,iBin) << endl;
+	    return kFALSE;
+	  }
 	  got_one=f_drawer[iProcess][iBin]->Draw_point();
 	  if (f_drawer[iProcess][iBin]->f_DIE_NOW) return kFALSE;
 	}
 	
 	f_accepted_points[iProcess][iBin]++;
 	f_total_accepted++;
+	if (f_total_accepted==EVENT_LIMIT) {
+	  cerr << "EVENT LIMIT reached overall" << endl;
+	  return kFALSE;
+	}
 	
 	f_keep_going=Keep_going();
 	Report_progress();
@@ -93,7 +102,7 @@ void TT_generator::Report_progress()
 ////////////////////////////////////////////////////////////////////////
 Bool_t TT_generator::Reject_process(Int_t process,Int_t bin)
 {
-  Long64_t accepted_total=0;
+  Double_t accepted_total=0;
   Double_t rate_total=0.0;
   for (Int_t jProcess=0;jProcess<f_N_Processes;jProcess++) {
     for (Int_t jBin=0;jBin<f_N_rate_bins;jBin++) {

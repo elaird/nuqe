@@ -101,7 +101,7 @@ void histo_graph(TH1D *histo,TGraph *graph,Int_t N_to_fill) {
 }
 
 ////////////////////////////////////////////////////////////////////////
-void single_compare(Int_t mode) {
+void single_compare(Int_t mode, TString file) {
   Init();
   
   //LS
@@ -133,7 +133,7 @@ void single_compare(Int_t mode) {
 
 
   //mine
-  TFile f("../../../events/single_nofp_mm.root");
+  TFile f(file);
   gROOT->cd();
   TTree *tree=(TTree*)f.Get("tree");
   TGraph *gr=(TGraph*)f.Get("ccqe_rate")->Clone();

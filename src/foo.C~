@@ -47,8 +47,11 @@
 //--shuffle tree
 //--put date/random label on tmp file
 //--directory for init_histos
+//--zero event bins (check boundaries)
 //--flux quantiles
 //--flux normalization
+
+//--why so inefficient at high energy?
 
 //--delete tree in TT_generator.h?
 //--somehow ensure that flux histo is a TH1F
@@ -97,7 +100,7 @@ Int_t main(Int_t argc,char **argv) {
   }
 
   TT_params params(argv[1]);
-  params.Set_seed(0);
+  params.Set_rand_type_and_seed(3,1);
 
   for (Int_t iRun=0;iRun<NRuns;iRun++) {
     params.Init(init_styles[iRun]);

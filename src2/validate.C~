@@ -4,31 +4,31 @@
   TString ps_file="../val.ps";
   TString options="";
 
-  polish_compare(1,50,"../events_val1.root");
+  polish_compare(1,50,"../events/events_val1.root");
   gPad->Print(ps_file+"(",options);
 
-  polish_compare(1,60,"../events_val1.root");
+  polish_compare(1,60,"../events/events_val1.root");
   gPad->Print(ps_file,options);
 
-  polish_compare(2,60,"../events_val2.root");
+  polish_compare(2,60,"../events/events_val2.root");
   gPad->Print(ps_file,options);
 
-  polish_compare(3,60,"../events_val3.root");
+  polish_compare(3,60,"../events/events_val3.root");
   gPad->Print(ps_file,options);
 
-  polish_compare(23,60,"../events_val4.root");
+  polish_compare(23,60,"../events/events_val4.root");
   gPad->Print(ps_file,options);
 
-  NUANCE_compare(1,800,"../events_val5.root");
+  NUANCE_compare(1,800,"../events/events_val5.root");
   gPad->Print(ps_file,options);
 
-  NUANCE_compare(2,800,"../events_val5.root");
+  NUANCE_compare(2,800,"../events/events_val5.root");
   gPad->Print(ps_file,options);
 
-  NUANCE_compare(1,300,"../events_val6.root");
+  NUANCE_compare(1,300,"../events/events_val6.root");
   gPad->Print(ps_file,options);
 
-  NUANCE_compare(2,300,"../events_val6.root");
+  NUANCE_compare(2,300,"../events/events_val6.root");
   gPad->Print(ps_file,options);
 
   gPad->Print(ps_file+"]",options);

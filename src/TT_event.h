@@ -15,8 +15,6 @@ class TT_event {
   TT_params *f_params;
   TT_nucleus *f_nucleus;
 
-  Bool_t f_bad_event;
-
   Double_t f_k_lower[4];
   Double_t f_k_upper[4];
 
@@ -25,9 +23,6 @@ class TT_event {
 
   Double_t f_kprime_lower[4];
   Double_t f_kprime_upper[4];
-
-  Double_t f_Re_L_lower[4][4];
-  Double_t f_Im_L_lower[4][4];
 
   Double_t f_p_lower[4];
   Double_t f_p_upper[4];
@@ -53,21 +48,22 @@ class TT_event {
   TT_event(TT_params *params,TT_nucleus *nucleus,Int_t process);
   virtual ~TT_event();
 
-  void Init(Double_t Enu,Double_t w);
-  void Init(Double_t Enu,Double_t w,Double_t q_bold,Double_t mag_p,Double_t phi_p);
-  void Init(Double_t Enu,Double_t w,Double_t q_bold,Double_t mag_p,Double_t cos_theta_pq,Double_t phi_p);
+  Bool_t Init(Double_t Enu,Double_t w);
+  Bool_t Init(Double_t Enu,Double_t w,Double_t q_bold,Double_t mag_p,Double_t phi_p);
+  Bool_t Init(Double_t Enu,Double_t w,Double_t q_bold,Double_t mag_p,Double_t cos_theta_pq,Double_t phi_p);
   void Init_k(Double_t Enu);
   void Init_q(Double_t q[4]);
-  //  void Init_L();
 
   void     Print_Stuff();
   void     Evaluate_dsigma_dall();
 
-  Bool_t   Setup_kinematics();
+  Bool_t   Setup_kinematics1();
+  Bool_t   Setup_kinematics2();
   Double_t Evaluate_integrand();
   Bool_t   Compute_p_and_pprime();
+  Double_t f_block_momentum;
 
-  Double_t Get_contraction2(Double_t target_axial_mass);
+  Double_t Get_contraction(Double_t target_axial_mass);
   void     AS_SM_determine_cos_theta_pq_and_E();
   void     SM_SM_determine_cos_theta_pq_and_E();
   void     AS_MF_determine_cos_theta_pq_and_E();

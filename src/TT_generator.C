@@ -184,8 +184,18 @@ void TT_generator::Make_graphs()
 ////////////////////////////////////////////////////////////////////////
 void TT_generator::Write_shuffled_tree()
 {
-  UInt_t NEntries = f_trees[0]->GetEntries();
-  UInt_t shuffled_indices[NEntries];
+  Long64_t Long64_Entries=f_trees[0]->GetEntries();
+  UInt_t UInt_Max_Entries=-1;
+  Long64_t Long64_Max_Entries=UInt_Max_Entries;
+
+  if (Long64_Entries>Long64_Max_Entries) {
+    cerr << "The tree has " << Long64_Entries << " entries.  The maximum allowed is " << Long64_Max_Entries << "." << endl;
+  }
+  UInt_t NEntries=Long64_Entries;
+  Double_t mem_usage=NEntries*4.0/1.0e6;
+  printf("Shuffling will take %6.3g MB of memory.  Look at exception handling.\n ",mem_usage);
+
+  UInt_t *shuffled_indices=new UInt_t[NEntries];
 
   for (UInt_t iEntry=0;iEntry<NEntries;iEntry++) {
     shuffled_indices[iEntry]=iEntry;
@@ -204,6 +214,9 @@ void TT_generator::Write_shuffled_tree()
     f_trees[0]->GetEntry(shuffled_indices[iEntry]);
     f_trees[1]->Fill();
   }
+
+  delete [] shuffled_indices;
+
   f_files[1]->cd();
   f_trees[1]->Write();
   f_files[1]->Close();

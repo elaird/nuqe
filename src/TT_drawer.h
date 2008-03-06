@@ -7,7 +7,7 @@
 #include "TT_params.h"
 #include "TT_nucleus.h"
 #include "TT_event.h"
-#include "TRandom3.h"
+#include "TRandom2.h"
 #include "TH1F.h"
 #include "TMath.h"
 
@@ -49,11 +49,13 @@ class TT_drawer {
   Double_t Flux_histo_height();
   void Init_randomly();
   void Compute_integral();
+  Bool_t Event_goodness();
   Bool_t Draw_point();
   Bool_t false1();
   Bool_t false2();
   Bool_t false3();
   Bool_t false4();
+  Bool_t false5();
 
 };
 
@@ -87,10 +89,13 @@ TT_drawer::TT_drawer(TT_params *params,TT_nucleus *nucleus,Int_t process,Int_t b
   //f_Enu_min=f_params->f_flux_histo->GetBinLowEdge(f_bin);
   //f_Enu_max=f_params->f_flux_histo->GetBinWidth(f_bin)+f_Enu_min;
 
-  TAxis *axis=f_params->f_flux_histo->GetXaxis();
-  Double_t axis_length=axis->GetXmax()-axis->GetXmin();;
-  f_Enu_min=axis->GetXmin() + axis_length*(f_bin+0.0)/f_params->f_N_rate_bins;
-  f_Enu_max=axis->GetXmin() + axis_length*(f_bin+1.0)/f_params->f_N_rate_bins;
+  //TAxis *axis=f_params->f_flux_histo->GetXaxis();
+  //Double_t axis_length=axis->GetXmax()-axis->GetXmin();;
+  //f_Enu_min=axis->GetXmin() + axis_length*(f_bin+0.0)/f_params->f_N_rate_bins;
+  //f_Enu_max=axis->GetXmin() + axis_length*(f_bin+1.0)/f_params->f_N_rate_bins;
+
+  f_Enu_min=f_params->f_rate_regions[f_bin];
+  f_Enu_max=f_params->f_rate_regions[f_bin+1];
 
   f_w_min=0.0;
   f_w_max=f_Enu_max-params->f_m_lep;

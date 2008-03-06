@@ -17,8 +17,8 @@ TT_nucleus.h
 /home/ted/work/boone/ccqe/xs_ted/src/TT_nucleus.h
 TT_event.h
 /home/ted/work/boone/ccqe/xs_ted/src/TT_event.h
-TRandom3.h
-/home/ted/work/boone/ccqe/xs_ted/src/TRandom3.h
+TRandom2.h
+/home/ted/work/boone/ccqe/xs_ted/src/TRandom2.h
 TH1F.h
 /home/ted/work/boone/ccqe/xs_ted/src/TH1F.h
 TMath.h
@@ -29,8 +29,8 @@ TT_event.h
 /home/ted/work/boone/ccqe/xs_ted/src/TT_event.h
 TMath.h
 /home/ted/work/boone/ccqe/xs_ted/src/TMath.h
-TRandom3.h
-/home/ted/work/boone/ccqe/xs_ted/src/TRandom3.h
+TRandom2.h
+/home/ted/work/boone/ccqe/xs_ted/src/TRandom2.h
 TCanvas.h
 /home/ted/work/boone/ccqe/xs_ted/src/TCanvas.h
 
@@ -113,6 +113,8 @@ TString.h
 /home/ted/work/boone/ccqe/xs_ted/src/TString.h
 TH1F.h
 /home/ted/work/boone/ccqe/xs_ted/src/TH1F.h
+TRandom2.h
+/home/ted/work/boone/ccqe/xs_ted/src/TRandom2.h
 TRandom3.h
 /home/ted/work/boone/ccqe/xs_ted/src/TRandom3.h
 

@@ -23,7 +23,8 @@
 //--test small values of eb, pf
 //--W boson mass?
 //--how to find p_max for spectral functions
-
+//--5 GeV comparison
+//
 //--clean up TT_event constructor, functions, etc.
 //--cmake compiler setting
 //--w<e_b ok?
@@ -42,14 +43,16 @@
 //--efficiency at high neutrino energy
 //--e scattering
 
-//--rate quantiles
 //--types in write_shuffled_tree
 //--make more events than we want?
 //--shuffle tree
 //--put date/random label on tmp file
 //--directory for init_histos
+//--zero event bins (check boundaries)
 //--flux quantiles
 //--flux normalization
+
+//--why so inefficient at high energy?
 
 //--delete tree in TT_generator.h?
 //--somehow ensure that flux histo is a TH1F
@@ -83,31 +86,38 @@ Int_t main(Int_t argc,char **argv) {
   }
 
   Int_t* init_styles=0;
+  Bool_t* init_styles_on=0;
   Int_t NRuns=0;
   if (argc==1) {
     NRuns=1;
     init_styles=new Int_t[NRuns];
+    init_styles_on=new Bool_t[NRuns];
     init_styles[0]=-1;
+    init_styles_on[0]=kTRUE;
   }
   if (argc>1) {
-    NRuns=7;
+    NRuns=8;
     init_styles=new Int_t[NRuns];
+    init_styles_on=new Bool_t[NRuns];
     for (Int_t iRun=0;iRun<NRuns;iRun++) {
       init_styles[iRun]=iRun;
+      init_styles_on[iRun]=kFALSE;
     }
+    init_styles_on[7]=kTRUE;
   }
 
   TT_params params(argv[1]);
-  params.Set_seed(0);
+  params.Set_rand_type_and_seed(3,0);
+  TT_nucleus nucleus(8,8);
+  //nucleus.n_plot();
 
   for (Int_t iRun=0;iRun<NRuns;iRun++) {
+    if (!init_styles_on[iRun]) continue;
+
     params.Init(init_styles[iRun]);
     Bool_t params_good=params.Check_for_problems();
     if (!params_good) return 1;
 
-    TT_nucleus nucleus(8,8);
-    //nucleus.n_plot();
-  
     TT_generator gen(&params,&nucleus);
     gen.Setup_processes();
     Bool_t status=gen.Generate_events();
@@ -117,5 +127,6 @@ Int_t main(Int_t argc,char **argv) {
   }
 
   delete [] init_styles;
+  delete [] init_styles_on;
   return 0;
 }

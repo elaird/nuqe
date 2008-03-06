@@ -8,5 +8,5 @@ g++ -o $EXEC $SOURCES `root-config --cflags --libs` -pg
 if [ "$?" = "0" ]; then
     ./$EXEC
     gprof ./$EXEC > $LOG
-    more $LOG
+    less $LOG
 fi

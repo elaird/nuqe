@@ -7,27 +7,27 @@
 void TT_params::Init(Int_t init_style)
 {
   Set_hacks_to_be_fixed();
-  f_N_rate_bins=3;
 
   if (init_style<0) {
-    Set_flux_mode(0);
+    Set_rate_bins(1);
+    Set_flux_mode(800);
     Set_MA_mode(1);
     Set_masses(f_M_neutron,f_M_proton);
 
     f_do_Pauli_blocking       =kTRUE;
     f_reject_q_tilde_lt_zero  =kTRUE;
-    f_do_deForest_prescription=kFALSE;
-    f_do_zero_FP              =kTRUE;
+    f_do_deForest_prescription=kTRUE;
+    f_do_zero_FP              =kFALSE;
 
-    f_filename="../events/events_1_mb.root";
+    f_filename="../events/events_23_mb.root";
 
-    f_N_Events=400000;
+    f_N_Events=10000;
 
     f_processes_on[0]=0;
     f_processes_on[1]=0;
     f_processes_on[2]=0;
-    f_processes_on[3]=0;
-    f_processes_on[4]=1;
+    f_processes_on[3]=1;
+    f_processes_on[4]=0;
   }
   else {
     f_N_Events=200000;
@@ -40,35 +40,38 @@ void TT_params::Init(Int_t init_style)
   if (init_style==4) Init_val4();
   if (init_style==5) Init_val5();
   if (init_style==6) Init_val6();
+  if (init_style==7) Init_val7();
 }
 
 
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_valgrind()
 {
-    Set_flux_mode(800);
-    Set_MA_mode(1);
-    Set_masses(f_M_neutron,f_M_proton);
-
-    f_do_Pauli_blocking       =kTRUE;
-    f_reject_q_tilde_lt_zero  =kTRUE;
-    f_do_deForest_prescription=kFALSE;
-    f_do_zero_FP              =kFALSE;
-
-    f_filename="events/events_memtest.root";
-
-    f_N_Events=4;
-
-    f_processes_on[0]=1;
-    f_processes_on[1]=0;
-    f_processes_on[2]=0;
-    f_processes_on[3]=1;
-    f_processes_on[4]=0;
+  Set_rate_bins(1);
+  Set_flux_mode(800);
+  Set_MA_mode(1);
+  Set_masses(f_M_neutron,f_M_proton);
+  
+  f_do_Pauli_blocking       =kTRUE;
+  f_reject_q_tilde_lt_zero  =kTRUE;
+  f_do_deForest_prescription=kFALSE;
+  f_do_zero_FP              =kFALSE;
+  
+  f_filename="../events/events_memtest.root";
+  
+  f_N_Events=4;
+  
+  f_processes_on[0]=1;
+  f_processes_on[1]=0;
+  f_processes_on[2]=0;
+  f_processes_on[3]=1;
+  f_processes_on[4]=0;
 }
 
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_val0()
 {
+  Set_rate_bins(1);
   Set_flux_mode(800);
   Set_MA_mode(1);
   Set_masses(f_M_neutron,f_M_proton);
@@ -78,7 +81,7 @@ void TT_params::Init_val0()
   f_do_deForest_prescription=kFALSE;
   f_do_zero_FP              =kFALSE;
 
-  f_filename="events/events_val0.root";
+  f_filename="../events/events_val0.root";
 
   f_processes_on[0]=1;
   f_processes_on[1]=0;
@@ -90,6 +93,7 @@ void TT_params::Init_val0()
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_val1()
 {
+  Set_rate_bins(1);
   Set_flux_mode(800);
   Set_MA_mode(1);
   Set_masses(f_M_neutron,f_M_neutron);
@@ -99,7 +103,7 @@ void TT_params::Init_val1()
   f_do_deForest_prescription=kTRUE;
   f_do_zero_FP              =kFALSE;
 
-  f_filename="events/events_val1.root";
+  f_filename="../events/events_val1.root";
 
   f_processes_on[0]=0;
   f_processes_on[1]=1;
@@ -111,6 +115,7 @@ void TT_params::Init_val1()
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_val2()
 {
+  Set_rate_bins(1);
   Set_flux_mode(800);
   Set_MA_mode(1);
   Set_masses(f_M_neutron,f_M_neutron);
@@ -120,7 +125,7 @@ void TT_params::Init_val2()
   f_do_deForest_prescription=kTRUE;
   f_do_zero_FP              =kFALSE;
 
-  f_filename="events/events_val2.root";
+  f_filename="../events/events_val2.root";
 
   f_processes_on[0]=0;
   f_processes_on[1]=0;
@@ -132,6 +137,7 @@ void TT_params::Init_val2()
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_val3()
 {
+  Set_rate_bins(1);
   Set_flux_mode(800);
   Set_MA_mode(1);
   Set_masses(f_M_neutron,f_M_neutron);
@@ -141,7 +147,7 @@ void TT_params::Init_val3()
   f_do_deForest_prescription=kTRUE;
   f_do_zero_FP              =kFALSE;
 
-  f_filename="events/events_val3.root";
+  f_filename="../events/events_val3.root";
 
   f_processes_on[0]=0;
   f_processes_on[1]=0;
@@ -153,6 +159,7 @@ void TT_params::Init_val3()
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_val4()
 {
+  Set_rate_bins(1);
   Set_flux_mode(800);
   Set_MA_mode(1);
   Set_masses(f_M_neutron,f_M_neutron);
@@ -162,7 +169,7 @@ void TT_params::Init_val4()
   f_do_deForest_prescription=kTRUE;
   f_do_zero_FP              =kFALSE;
 
-  f_filename="events/events_val4.root";
+  f_filename="../events/events_val4.root";
 
   f_processes_on[0]=0;
   f_processes_on[1]=0;
@@ -174,6 +181,7 @@ void TT_params::Init_val4()
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_val5()
 {
+  Set_rate_bins(1);
   Set_flux_mode(800);
   Set_MA_mode(1);
   Set_masses(f_M_neutron,f_M_proton);
@@ -183,7 +191,7 @@ void TT_params::Init_val5()
   f_do_deForest_prescription=kFALSE;
   f_do_zero_FP              =kTRUE;
 
-  f_filename="events/events_val5.root";
+  f_filename="../events/events_val5.root";
 
   f_processes_on[0]=0;
   f_processes_on[1]=0;
@@ -195,6 +203,7 @@ void TT_params::Init_val5()
 ////////////////////////////////////////////////////////////////////////
 void TT_params::Init_val6()
 {
+  Set_rate_bins(1);
   Set_flux_mode(300);
   Set_MA_mode(1);
   Set_masses(f_M_neutron,f_M_proton);
@@ -204,7 +213,7 @@ void TT_params::Init_val6()
   f_do_deForest_prescription=kFALSE;
   f_do_zero_FP              =kTRUE;
 
-  f_filename="events/events_val6.root";
+  f_filename="../events/events_val6.root";
 
   f_processes_on[0]=0;
   f_processes_on[1]=0;
@@ -214,9 +223,45 @@ void TT_params::Init_val6()
 }
 
 ////////////////////////////////////////////////////////////////////////
-void TT_params::Set_seed(Int_t seed)
+void TT_params::Init_val7()
 {
-  f_rand.SetSeed(seed);
+  Set_rate_bins(20);
+  Set_flux_mode(0);
+  //hack
+  f_rate_regions[f_N_rate_bins]=5.0;
+  Set_MA_mode(1);
+  Set_masses(f_M_neutron,f_M_proton);
+
+  f_do_Pauli_blocking       =kTRUE;
+  f_reject_q_tilde_lt_zero  =kTRUE;
+  f_do_deForest_prescription=kFALSE;
+  f_do_zero_FP              =kTRUE;
+
+  f_filename="../events/events_val7.root";
+
+  f_processes_on[0]=0;
+  f_processes_on[1]=0;
+  f_processes_on[2]=0;
+  f_processes_on[3]=0;
+  f_processes_on[4]=1;
+}
+
+////////////////////////////////////////////////////////////////////////
+void TT_params::Set_rand_type_and_seed(Int_t rand_type,Int_t seed)
+{
+  if (rand_type==2) {
+    f_rand=new TRandom2;
+  }
+  if (rand_type==3) {
+    f_rand=new TRandom3;
+  }
+  f_rand->SetSeed(seed);
+}
+
+////////////////////////////////////////////////////////////////////////
+void TT_params::Set_rate_bins(Int_t bins)
+{
+  f_N_rate_bins=bins;
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -236,6 +281,20 @@ void TT_params::Set_flux_mode(Int_t flux_mode)
   f_flux_histo=(TH1F*)flux_file.Get(hist_name)->Clone();
   f_flux_histo->SetDirectory(0);
   flux_file.Close();
+
+  Double_t *x=new Double_t[f_N_rate_bins];
+  f_rate_regions=new Double_t[f_N_rate_bins+1];
+
+  for (Int_t i_rate_bin=0;i_rate_bin<f_N_rate_bins;i_rate_bin++) {
+    x[i_rate_bin]=(i_rate_bin+0.0)/f_N_rate_bins;
+  }
+  f_flux_histo->GetQuantiles(f_N_rate_bins,f_rate_regions,x);
+  f_rate_regions[f_N_rate_bins]=f_flux_histo->GetXaxis()->GetXmax();
+  delete [] x;
+
+  for (Int_t j_rate_bin=0;j_rate_bin<=f_N_rate_bins;j_rate_bin++) {
+    printf("y[%d]=%g\n",j_rate_bin,f_rate_regions[j_rate_bin]);
+  }
 
   //f_N_rate_bins=rate_bins;
   //f_rate_bins_on=new Bool_t[f_N_rate_bins];
@@ -281,8 +340,9 @@ void TT_params::Set_masses(Double_t m_target, Double_t m_recoil)
 void TT_params::Set_hacks_to_be_fixed()
 {
   cerr << "fix these hacks someday" << endl;
-  f_numerical_threshold=2.0e-13;
-  f_N_successes=1000;
+  f_numerical_threshold=2.0e-6;
+  //f_numerical_threshold=2.0e-13;
+  f_N_successes=200;
   f_rate_factor=2.0;
 }
 

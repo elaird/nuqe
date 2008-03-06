@@ -5,6 +5,7 @@
 #include "Rtypes.h"
 #include "TString.h"
 #include "TH1F.h"
+#include "TRandom2.h"
 #include "TRandom3.h"
 
 using namespace std;
@@ -12,7 +13,7 @@ using namespace std;
 class TT_params {
   public :
 
-  TRandom3 f_rand;
+  TRandom* f_rand;
   
   //from PDG
   static const Double_t f_M_proton=0.93827;
@@ -40,6 +41,7 @@ class TT_params {
 
   TH1F   *f_flux_histo;
   Int_t   f_N_rate_bins;
+  Double_t *f_rate_regions;
   //Bool_t *f_rate_bins_on;
 
   Bool_t f_do_Pauli_blocking;
@@ -72,9 +74,11 @@ class TT_params {
   virtual void Init_val4();
   virtual void Init_val5();
   virtual void Init_val6();
+  virtual void Init_val7();
   virtual void Init_valgrind();
 
-  void Set_seed(Int_t);
+  void Set_rand_type_and_seed(Int_t,Int_t);
+  void Set_rate_bins(Int_t);
   void Set_flux_mode(Int_t);
   void Set_MA_mode(Int_t);
   void Set_masses(Double_t,Double_t);
@@ -113,7 +117,9 @@ class TT_params {
 #ifdef TT_params_cxx
 TT_params::TT_params(char *config_file)
 {
+  f_rand=0;
   f_flux_histo=0;
+  f_rate_regions=0;
   //f_rate_bins_on=0;
   Init_g();
   Init_epsilon_lower();
@@ -121,8 +127,10 @@ TT_params::TT_params(char *config_file)
 
 TT_params::~TT_params() {
   if (f_flux_histo)  delete f_flux_histo;
+  if (f_rate_regions)  delete [] f_rate_regions;
   //if (f_rate_bins_on) delete [] f_rate_bins_on;
   if (f_MA)           delete [] f_MA;
+  if (f_rand) delete f_rand;
 }
 
 #endif // #ifdef TT_params_cxx

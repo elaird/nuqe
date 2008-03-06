@@ -1,10 +1,12 @@
 #!/bin/bash
 
+EXEC=foo_pg
+LOG=prof_log
 SOURCES=$(ls src/*.C)
-g++ -o foo_pg $SOURCES `root-config --cflags --libs` -pg
+g++ -o $EXEC $SOURCES `root-config --cflags --libs` -pg
 
 if [ "$?" = "0" ]; then
-    ./foo_pg
-    gprof ./foo_pg > prof_log
-    more prof_log
+    ./$EXEC
+    gprof ./$EXEC > $LOG
+    more $LOG
 fi
