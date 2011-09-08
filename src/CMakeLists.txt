@@ -1,5 +1,0 @@
-PROJECT(foo) 
-SET(FOO_SRCS foo.C TT_params.C TT_generator.C TT_nucleus.C TT_drawer.C TT_event.C)
-ADD_EXECUTABLE(foo ${FOO_SRCS})
-SET(CMAKE_CXX_FLAGS "`root-config --cflags`")
-TARGET_LINK_LIBRARIES(foo "`root-config --libs`")
