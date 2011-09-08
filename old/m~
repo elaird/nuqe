@@ -1,1 +1,0 @@
-g++ foo.C TT_class.C functions.C FH.C `root-config --cflags --libs`
