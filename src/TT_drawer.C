@@ -49,11 +49,11 @@ void TT_drawer::Init_randomly()
   while (iSuccess<f_params->f_N_successes) {
     if (!Draw_point()) continue;
     Double_t result=f_event->f_dsigma_dall*Flux_histo_height();
-  
+
     if (result>=f_height/2.0) {
       heights[iSuccess]=result;
       iSuccess++;
-      if (iSuccess%100==0) cout << iSuccess << endl;
+      if (iSuccess%100==0) std::cout << iSuccess << std::endl;
     }
     if (result>f_height) {
       f_height=result;
@@ -90,12 +90,12 @@ Bool_t TT_drawer::Event_goodness()
 {
   Double_t Enu=f_params->f_rand->Uniform(f_Enu_min,f_Enu_max);
   Double_t w=f_params->f_rand->Uniform(f_w_min,f_w_max);
-  if (w>Enu-f_params->f_m_lep) return false1();
+  if (w>Enu-f_params->f_m_lepton) return false1();
 
   if (f_process==0) return f_event->Init(Enu,w);
   else {
-    //Double_t p_lep=sqrt((Enu-f_w_min)*(Enu-f_w_min)-(f_params->f_m_lep)*(f_params->f_m_lep));
-    Double_t p_lep=sqrt((Enu-w)*(Enu-w)-(f_params->f_m_lep)*(f_params->f_m_lep));
+    //Double_t p_lep=sqrt((Enu-f_w_min)*(Enu-f_w_min)-(f_params->f_m_lepton)*(f_params->f_m_lepton));
+    Double_t p_lep=sqrt((Enu-w)*(Enu-w)-(f_params->f_m_lepton)*(f_params->f_m_lepton));
     Double_t qbold_min=Enu-p_lep;
     Double_t qbold_max=Enu+p_lep;
     Double_t qbold=f_params->f_rand->Uniform(f_qbold_min,f_qbold_max);
@@ -124,11 +124,11 @@ Bool_t TT_drawer::Draw_point()
   if (f_height<rate) {
     TString nums=Form("proc=%d; bin=%d; ratio=%8.6g; h=%8.6g; rate=%8.6g;",f_process,f_bin,rate/f_height,f_height,rate);
     if (f_initializing) {
-      cout << "initializing: "+nums << endl;
+      std::cout << "initializing: "+nums << std::endl;
     }
     else {
       f_DIE_NOW=kTRUE;
-      cerr << "FATAL ERROR: "+nums << endl;
+      std::cerr << "FATAL ERROR: "+nums << std::endl;
     }
   }
   

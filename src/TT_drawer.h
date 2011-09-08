@@ -11,8 +11,6 @@
 #include "TH1F.h"
 #include "TMath.h"
 
-using namespace std;
-
 class TT_drawer {
  public :
 
@@ -98,9 +96,9 @@ TT_drawer::TT_drawer(TT_params *params,TT_nucleus *nucleus,Int_t process,Int_t b
   f_Enu_max=f_params->f_rate_regions[f_bin+1];
 
   f_w_min=0.0;
-  f_w_max=f_Enu_max-params->f_m_lep;
+  f_w_max=f_Enu_max-params->f_m_lepton;
 
-  Double_t p_lep=sqrt(pow(f_Enu_max-f_w_min,2)-pow(f_params->f_m_lep,2));
+  Double_t p_lep=sqrt(pow(f_Enu_max-f_w_min,2)-pow(f_params->f_m_lepton,2));
   f_qbold_min=f_Enu_max-p_lep;
   f_qbold_max=f_Enu_max+p_lep;
 
