@@ -6,5 +6,6 @@ misc/may09_ma_compare
 CMakeFiles/*
 plots/*
 *~
+*.o
 *.d
 *.so
