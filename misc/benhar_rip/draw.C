@@ -1,0 +1,15 @@
+#include "TGraph.h"
+#include "TROOT.h"
+#include "TH2D.h"
+#include "TCanvas.h"
+#include "BenharDrawer.C"
+///////////////////////////////////////////////////////////////////
+void draw() {
+  BenharDrawer bd;
+  bd.draw();
+}
+///////////////////////////////////////////////////////////////////
+int main() {
+  draw();
+  return 0;
+}

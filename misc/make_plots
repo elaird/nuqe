@@ -1,0 +1,4 @@
+g++ -O0 -g -o may09_ma_compare benhar_rip/BenharDrawer.C butkevich_numbers/ButkevichDrawer.C may09_ma_compare.C `root-config --cflags --libs` && \
+./may09_ma_compare && \
+ps2pdf benhar_compare.ps && \
+okular benhar_compare.pdf &
