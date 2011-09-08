@@ -8,14 +8,14 @@
 #include "TRandom2.h"
 #include "TRandom3.h"
 
-using namespace std;
-
 class TT_params {
   public :
 
   TRandom* f_rand;
   
   //from PDG
+  static const Double_t f_m_muon=0.10566;
+  static const Double_t f_m_electron=0.000511;
   static const Double_t f_M_proton=0.93827;
   static const Double_t f_M_neutron=0.93956;
   static const Double_t f_GF=1.1664e-5;
@@ -36,9 +36,6 @@ class TT_params {
   Double_t f_g[4][4];
   Double_t f_epsilon_lower[4][4][4][4];
 
-  static const Double_t f_m_lep=0.10566;
-  //static const Double_t f_m_lep=0.000511;
-
   TH1F   *f_flux_histo;
   Int_t   f_N_rate_bins;
   Double_t *f_rate_regions;
@@ -48,12 +45,14 @@ class TT_params {
   Bool_t f_reject_q_tilde_lt_zero;
   Bool_t f_do_deForest_prescription;
   Bool_t f_do_zero_FP;
+  Int_t  f_do_antinu;
 
   Double_t f_numerical_threshold;
 
   static const Int_t f_N_Processes=5;
   Bool_t f_processes_on[f_N_Processes];
 
+  Double_t f_m_lepton;
   Double_t f_M_target;
   Double_t f_M_recoil;
 
@@ -75,13 +74,16 @@ class TT_params {
   virtual void Init_val5();
   virtual void Init_val6();
   virtual void Init_val7();
+  virtual void Init_val8();
+  virtual void Init_val9();
   virtual void Init_valgrind();
 
   void Set_rand_type_and_seed(Int_t,Int_t);
   void Set_rate_bins(Int_t);
-  void Set_flux_mode(Int_t);
+  void Set_flux_mode(TString,Int_t);
+  void Set_Enu_max(Double_t);
   void Set_MA_mode(Int_t);
-  void Set_masses(Double_t,Double_t);
+  void Set_masses(Double_t,Double_t,Double_t);
   void Set_hacks_to_be_fixed();
   Bool_t Check_for_problems();
 
