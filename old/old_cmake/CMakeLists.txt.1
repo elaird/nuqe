@@ -1,0 +1,6 @@
+PROJECT(foo) 
+SET(FOO_SRCS foo.C TT_params.C TT_generator.C TT_nucleus.C TT_drawer.C TT_event.C)
+ADD_EXECUTABLE(foo ${FOO_SRCS})
+SET(CMAKE_CXX_FLAGS "-pthread -m32 -I/usr/include/root")
+SET(CMAKE_SHARED_LINKER_FLAGS "-L/usr/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lz -pthread -lm -ldl -rdynamic")
+TARGET_LINK_LIBRARIES(foo)
