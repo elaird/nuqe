@@ -7,8 +7,6 @@
 #include "TT_nucleus.h"
 #include "TString.h"
 
-using namespace std;
-
 class TT_event {
  public :
 
@@ -43,6 +41,11 @@ class TT_event {
   Double_t f_enuqe;
   Double_t f_Q2qe;
 
+  Double_t f_kappa;
+  Double_t f_lambda;
+  Double_t f_tau;
+  Double_t f_psi;
+
   Int_t f_process;
 
   TT_event(TT_params *params,TT_nucleus *nucleus,Int_t process);
@@ -60,7 +63,7 @@ class TT_event {
   Bool_t   Setup_kinematics1();
   Bool_t   Setup_kinematics2();
   Double_t Evaluate_integrand();
-  Bool_t   Compute_p_and_pprime();
+  void     Compute_p_and_pprime();
   Double_t f_block_momentum;
 
   Double_t Get_contraction(Double_t target_axial_mass);

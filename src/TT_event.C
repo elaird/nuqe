@@ -8,11 +8,11 @@
 void TT_event::Print_Stuff()
 {
   //debug info here
-  cout << "M_i=" << sqrt(pow(f_p_lower[0],2)-pow(f_p_lower[1],2)-pow(f_p_lower[2],2)-pow(f_p_lower[3],2)) << endl;
-  cout << "M_f=" << sqrt(pow(f_pprime_lower[0],2)-pow(f_pprime_lower[1],2)-pow(f_pprime_lower[2],2)-pow(f_pprime_lower[3],2)) << endl;
-  cout << "M_lep=" << sqrt(pow(f_kprime_lower[0],2)-pow(f_kprime_lower[1],2)-pow(f_kprime_lower[2],2)-pow(f_kprime_lower[3],2)) << endl;
+  std::cout << "M_i=" << sqrt(pow(f_p_lower[0],2)-pow(f_p_lower[1],2)-pow(f_p_lower[2],2)-pow(f_p_lower[3],2)) << std::endl;
+  std::cout << "M_f=" << sqrt(pow(f_pprime_lower[0],2)-pow(f_pprime_lower[1],2)-pow(f_pprime_lower[2],2)-pow(f_pprime_lower[3],2)) << std::endl;
+  std::cout << "M_lep=" << sqrt(pow(f_kprime_lower[0],2)-pow(f_kprime_lower[1],2)-pow(f_kprime_lower[2],2)-pow(f_kprime_lower[3],2)) << std::endl;
   SM_compute_enuqe_and_Q2qe();
-  cout << "EnuQE=" << f_enuqe << endl;
+  std::cout << "EnuQE=" << f_enuqe << std::endl;
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -37,7 +37,7 @@ Bool_t TT_event::Init(Double_t Enu,Double_t w,Double_t qbold,Double_t mag_p,Doub
   f_q_lower[0]=w;
   if (!Setup_kinematics1()) return kFALSE;
 
-  Double_t p_lep_sq=(Enu-w)*(Enu-w)-f_params->f_m_lep*f_params->f_m_lep;
+  Double_t p_lep_sq=(Enu-w)*(Enu-w)-f_params->f_m_lepton*f_params->f_m_lepton;
   Double_t cos_theta_q  =(Enu*Enu-p_lep_sq+qbold*qbold)/(2.0*Enu*qbold);
   if (cos_theta_q>1.0 || cos_theta_q<-1.0) return kFALSE;
   //Double_t cos_theta_lep=(Enu*Enu+p_lep_sq-qbold*qbold)/(2.0*Enu*sqrt(p_lep_sq));
@@ -65,7 +65,7 @@ Bool_t TT_event::Init(Double_t Enu,Double_t w,Double_t qbold,Double_t mag_p,Doub
   pos-=sqrt(f_params->f_M_recoil*f_params->f_M_recoil + mag_p*mag_p + qbold*qbold + 2.0*mag_p*qbold*cos_theta_pq);
   pos-=f_nucleus->f_E2+mag_p*mag_p/(2.0*f_nucleus->f_M_residual_nucleus);
   if (pos<0.0) {
-    //cout << "pos=" << pos << endl;
+    //std::cout << "pos=" << pos << std::endl;
     return kFALSE;
   }
 
@@ -188,7 +188,7 @@ Bool_t TT_event::Setup_kinematics2()
 }
 
 ////////////////////////////////////////////////////////////////
-Bool_t TT_event::Compute_p_and_pprime()
+void TT_event::Compute_p_and_pprime()
 {
   Double_t sinth_q=sqrt(1.0-f_cos_theta_q*f_cos_theta_q);
   Double_t sinth_pq=sqrt(1.0-f_cos_theta_pq*f_cos_theta_pq);
@@ -235,7 +235,7 @@ Double_t TT_event::Evaluate_integrand()
   }
 
   Double_t ans=SF_norm/(f_p_lower[0]*f_pprime_lower[0]);
-  if (delta_denom==0.0) cout << "vanishing denominator a" << endl;
+  if (delta_denom==0.0) std::cout << "vanishing denominator a" << std::endl;
   
   //-1-we converted to spherical coordinates for the initial momentum
   //-2-for some processes, the delta function in the spectral function
@@ -273,8 +273,8 @@ Double_t TT_event::Get_contraction(Double_t target_axial_mass)
     q2      +=f_q_lower[mu]*f_q_upper[mu];
     q2_tilde+=q_tilde_lower[mu]*q_tilde_upper[mu];
   }
-  if (q2>0.0) cout <<       "q2=      " << q2 << endl;
-  if (q2_tilde>0.0) cout << "q2_tilde=" << q2_tilde << endl;
+  if (q2>0.0) std::cout <<       "q2=      " << q2 << std::endl;
+  if (q2_tilde>0.0) std::cout << "q2_tilde=" << q2_tilde << std::endl;
 
   Double_t h1_factor=f_params->H1(q2_tilde,target_axial_mass)*pow(f_params->f_M_target,2);
   Double_t h2_factor=f_params->H2(q2_tilde,target_axial_mass);
@@ -302,7 +302,7 @@ Double_t TT_event::Get_contraction(Double_t target_axial_mass)
 	  Im_L_lower_mu_nu += -2.0*f_params->f_epsilon_lower[mu][nu][kappa][lambda]*f_k_upper[kappa]*f_kprime_upper[lambda];
 	  Im_H_upper_mu_nu += -f_params->f_epsilon_lower[mu][nu][kappa][lambda]*f_p_lower[kappa]*q_tilde_lower[lambda]*h3_factor;
 	}
-	//cout << "Im_H_upper[" << mu << "][" << nu << "]: " << Im_H_upper_mu_nu << endl;
+	//std::cout << "Im_H_upper[" << mu << "][" << nu << "]: " << Im_H_upper_mu_nu << std::endl;
       }
 
       Re_contraction+=Re_L_lower_mu_nu*Re_H_upper_mu_nu;
@@ -312,8 +312,8 @@ Double_t TT_event::Get_contraction(Double_t target_axial_mass)
     }
   }
 
-  //cout << "Re:" << f_Re_contraction << endl;
-  //cout << "Im:" << f_Im_contraction << endl;
+  //std::cout << "Re:" << f_Re_contraction << std::endl;
+  //std::cout << "Im:" << f_Im_contraction << std::endl;
   return Re_contraction;
 }
 
@@ -386,11 +386,19 @@ void TT_event::SM_compute_enuqe_and_Q2qe()
   Double_t M=f_params->f_M_target-f_nucleus->f_SM_e_bind;
   Double_t num,denom;
 
-  num=pow(f_params->f_M_recoil,2)-pow(f_params->f_m_lep,2)-M*M+2.0*M*f_kprime_lower[0];
+  num=pow(f_params->f_M_recoil,2)-pow(f_params->f_m_lepton,2)-M*M+2.0*M*f_kprime_lower[0];
   denom=M-f_kprime_lower[0]+f_kprime_lower[3];
 
   f_enuqe=0.5*num/denom;
 
   f_Q2qe=2.0*f_enuqe*(f_kprime_lower[0]-f_kprime_lower[3]);
-  f_Q2qe+=f_params->f_m_lep*f_params->f_m_lep;
+  f_Q2qe+=f_params->f_m_lepton*f_params->f_m_lepton;
+
+  f_kappa=sqrt(f_q_lower[1]*f_q_lower[1]+f_q_lower[2]*f_q_lower[2]+f_q_lower[3]*f_q_lower[3])/(2.0*f_params->f_M_target);
+  f_lambda=(f_q_lower[0]-f_nucleus->f_SM_e_bind)/(2.0*f_params->f_M_target);
+  f_tau=f_kappa*f_kappa-f_lambda*f_lambda;
+  f_psi=(f_lambda-f_tau) / sqrt( (1.0+f_lambda)*f_tau + f_kappa*sqrt(f_tau*(1.0+f_tau)) );
+  Double_t eta=f_nucleus->f_SM_p_fermi/f_params->f_M_target;
+  Double_t ksi=sqrt(1.0+eta*eta)-1.0;
+  f_psi/=sqrt(ksi);
 }
