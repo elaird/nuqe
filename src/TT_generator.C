@@ -21,7 +21,7 @@ void TT_generator::Setup_processes()
     }
   }
   f_files[1]->cd();
-  cout << "Generator initialized." << endl;
+  std::cout << "Generator initialized." << std::endl;
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -43,7 +43,7 @@ Bool_t TT_generator::Generate_events()
 	while (!got_one) {
 	  f_total_points[iProcess][iBin]++;
 	  if (f_total_points[iProcess][iBin]==EVENT_LIMIT) {
-	    cerr << Form("EVENT LIMIT reached for iProcess=%d,iBin=%d",iProcess,iBin) << endl;
+	    std::cerr << Form("EVENT LIMIT reached for iProcess=%d,iBin=%d",iProcess,iBin) << std::endl;
 	    return kFALSE;
 	  }
 	  got_one=f_drawer[iProcess][iBin]->Draw_point();
@@ -53,7 +53,7 @@ Bool_t TT_generator::Generate_events()
 	f_accepted_points[iProcess][iBin]++;
 	f_total_accepted++;
 	if (f_total_accepted==EVENT_LIMIT) {
-	  cerr << "EVENT LIMIT reached overall" << endl;
+	  std::cerr << "EVENT LIMIT reached overall" << std::endl;
 	  return kFALSE;
 	}
 	
@@ -64,7 +64,7 @@ Bool_t TT_generator::Generate_events()
       } //end bin loop
     } //end process loop
     if (total_accepted_old==f_total_accepted) {
-      cout << "caught in an infinite loop" << endl;
+      std::cout << "caught in an infinite loop" << std::endl;
       return kFALSE;
     }
 
@@ -94,7 +94,8 @@ Bool_t TT_generator::Keep_going()
 void TT_generator::Report_progress()
 {
   if (f_total_accepted==f_event_display || !f_keep_going) {
-    cout << "total accepted: " << f_total_accepted << endl;
+    TDatime dt;
+    std::cout << "(" << dt.AsString() << ") total accepted: " << f_total_accepted << std::endl;
     f_event_display*=2;
   }
 }   
@@ -136,6 +137,10 @@ void TT_generator::Fill_tree(TT_event *event)
   f_tree_process=event->f_process;
   f_tree_enuqe=event->f_enuqe;
   f_tree_Q2qe=event->f_Q2qe;
+  f_tree_kappa=event->f_kappa;
+  f_tree_lambda=event->f_lambda;
+  f_tree_tau=event->f_tau;
+  f_tree_psi=event->f_psi;
   f_trees[0]->Fill();
 }
 
@@ -189,11 +194,11 @@ void TT_generator::Write_shuffled_tree()
   Long64_t Long64_Max_Entries=UInt_Max_Entries;
 
   if (Long64_Entries>Long64_Max_Entries) {
-    cerr << "The tree has " << Long64_Entries << " entries.  The maximum allowed is " << Long64_Max_Entries << "." << endl;
+    std::cerr << "The tree has " << Long64_Entries << " entries.  The maximum allowed is " << Long64_Max_Entries << "." << std::endl;
   }
   UInt_t NEntries=Long64_Entries;
   Double_t mem_usage=NEntries*4.0/1.0e6;
-  printf("Shuffling will take %6.3g MB of memory.  Look at exception handling.\n ",mem_usage);
+  printf("Shuffling will take %6.3g MB of memory.\n ",mem_usage);
 
   UInt_t *shuffled_indices=new UInt_t[NEntries];
 

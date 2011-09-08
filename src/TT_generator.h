@@ -14,8 +14,6 @@
 #include "TTree.h"
 #include "TROOT.h"
 
-using namespace std;
-
 class TT_generator {
  public :
 
@@ -41,6 +39,10 @@ class TT_generator {
   Int_t   f_tree_process;
   Float_t f_tree_enuqe;
   Float_t f_tree_Q2qe;
+  Float_t f_tree_kappa;
+  Float_t f_tree_lambda;
+  Float_t f_tree_tau;
+  Float_t f_tree_psi;
   
   static const Int_t f_N_Processes=TT_params::f_N_Processes;
   Double_t   *f_accepted_points[f_N_Processes];
@@ -118,6 +120,10 @@ TT_generator::TT_generator(TT_params *params,TT_nucleus *nucleus)
     f_trees[i]->Branch("process_branch",&f_tree_process,"process/I");
     f_trees[i]->Branch("enuqe_branch",&f_tree_enuqe,"enuqe/F");
     f_trees[i]->Branch("Q2qe_branch",&f_tree_Q2qe,"Q2qe/F");
+    f_trees[i]->Branch("kappa_branch",&f_tree_kappa,"kappa/F");
+    f_trees[i]->Branch("lambda_branch",&f_tree_lambda,"lambda/F");
+    f_trees[i]->Branch("tau_branch",&f_tree_tau,"tau/F");
+    f_trees[i]->Branch("psi_branch",&f_tree_psi,"psi/F");
   }
 
   f_total_accepted=0;
